@@ -108,5 +108,15 @@
     "date": "28/12/2025",
     "image": "/media/pictures/quizsets/christmas.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DSz1q99Eg3S/?img_index=1"
+  },
+  {
+    "id": 11,
+    "title": "Art Quiz",
+    "description": "Scribbles and QA Collab Quizzers Sundae Set",
+    "category": "Arts & Literature",
+    "questions": 8,
+    "date": "4/1/2026",
+    "image": "/media/pictures/quizsets/art.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DTFl_y-krCh/?img_index=1"
   }
 ]
