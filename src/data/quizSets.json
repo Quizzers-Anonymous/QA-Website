@@ -118,5 +118,15 @@
     "date": "4/1/2026",
     "image": "/media/pictures/quizsets/art.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DTFl_y-krCh/?img_index=1"
+  },
+  {
+    "id": 12,
+    "title": "Dance Quiz",
+    "description": "Saptham and QA Collab Quizzers Sundae Set",
+    "category": "Arts & Literature",
+    "questions": 7,
+    "date": "11/1/2026",
+    "image": "/media/pictures/quizsets/dance.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DTYAICQEgiU/?img_index=1"
   }
 ]
