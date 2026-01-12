@@ -98,5 +98,15 @@
     "venue": "IST 2nd Floor",
     "poster": "/media/pictures/events/animation.jpeg",
     "eventStatus": "completed"
+  },
+    {
+    "id": 11,
+    "title": "ASafety Slide Showdown",
+    "description": "SAFETY SLIDE CONTEST, where you meme your way to glory, and creativity meets comedy!",
+    "date": "17/01/2026",
+    "time": "12:00 AM",
+    "venue": "QA Banter WhatsApp Group",
+    "poster": "/media/pictures/events/meme.jpeg",
+    "eventStatus": "upcoming"
   }
 ]
