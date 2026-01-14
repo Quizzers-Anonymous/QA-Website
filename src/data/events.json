@@ -101,12 +101,23 @@
   },
     {
     "id": 11,
-    "title": "ASafety Slide Showdown",
+    "title": "Safety Slide Showdown",
     "description": "SAFETY SLIDE CONTEST, where you meme your way to glory, and creativity meets comedy!",
     "date": "17/01/2026",
-    "time": "12:00 AM",
+    "time": "12:00 PM",
     "venue": "QA Banter WhatsApp Group",
     "poster": "/media/pictures/events/meme.jpeg",
     "eventStatus": "upcoming"
+  },
+    {
+    "id": 12,
+    "title": "IPL Auction",
+    "description": "Mugavari '26 Quizzers Anonymous X Guindy Times Present IPL Auction",
+    "date": "17/01/2026",
+    "time": "05:00 PM",
+    "venue": "Online  ",
+    "poster": "/media/pictures/events/ipl.mp4",
+    "eventStatus": "upcoming"
   }
+
 ]
