@@ -1,7 +1,9 @@
-const crypto = require('node:crypto');
-const path = require('node:path');
+const crypto = require("node:crypto");
+const path = require("node:path");
 
-const teamData = require(path.join(__dirname, '..', 'src', 'data', 'team.json'));
+const teamData = require(
+  path.join(__dirname, "..", "src", "data", "team.json"),
+);
 
 const SIGNING_SECRET = process.env.TEAM_IMAGE_SIGNING_SECRET;
 const URL_TTL_SECONDS = Number(process.env.TEAM_IMAGE_URL_TTL_SECONDS || 300);
@@ -18,11 +20,11 @@ function createSignaturePayload(key, expires) {
 }
 
 function signKey(key, expires) {
-  const secret = ensureEnv(SIGNING_SECRET, 'TEAM_IMAGE_SIGNING_SECRET');
+  const secret = ensureEnv(SIGNING_SECRET, "TEAM_IMAGE_SIGNING_SECRET");
   return crypto
-    .createHmac('sha256', secret)
+    .createHmac("sha256", secret)
     .update(createSignaturePayload(key, expires))
-    .digest('hex');
+    .digest("hex");
 }
 
 function buildPhotoUrl(key) {
@@ -50,17 +52,17 @@ function withSignedPhoto(member) {
 }
 
 module.exports = async function handler(req, res) {
-  if (req.method !== 'GET') {
-    res.setHeader('Allow', 'GET');
-    return res.status(405).json({ error: 'Method Not Allowed' });
+  if (req.method !== "GET") {
+    res.setHeader("Allow", "GET");
+    return res.status(405).json({ error: "Method Not Allowed" });
   }
 
   try {
-    ensureEnv(SIGNING_SECRET, 'TEAM_IMAGE_SIGNING_SECRET');
-    ensureEnv(process.env.TEAM_IMAGE_BLOB_BASE_URL, 'TEAM_IMAGE_BLOB_BASE_URL');
+    ensureEnv(SIGNING_SECRET, "TEAM_IMAGE_SIGNING_SECRET");
+    ensureEnv(process.env.TEAM_IMAGE_BLOB_BASE_URL, "TEAM_IMAGE_BLOB_BASE_URL");
   } catch (error) {
-    console.error('[team-api] configuration error', error);
-    return res.status(500).json({ error: 'Team API is not configured yet.' });
+    console.error("[team-api] configuration error", error);
+    return res.status(500).json({ error: "Team API is not configured yet." });
   }
 
   const body = {
@@ -72,6 +74,9 @@ module.exports = async function handler(req, res) {
     ttlSeconds: URL_TTL_SECONDS,
   };
 
-  res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=60, stale-while-revalidate=300');
+  res.setHeader(
+    "Cache-Control",
+    "public, max-age=0, s-maxage=60, stale-while-revalidate=300",
+  );
   return res.status(200).json(body);
 };

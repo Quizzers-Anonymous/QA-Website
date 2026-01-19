@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import MemberCard from '../components/MemberCard';
+import React, { useEffect, useState } from "react";
+import MemberCard from "../components/MemberCard";
 
-const TEAM_API_BASE = (process.env.REACT_APP_TEAM_API_BASE || '').replace(/\/$/, '');
-const TEAM_API_URL = TEAM_API_BASE ? `${TEAM_API_BASE}/api/team` : '/api/team';
+const TEAM_API_BASE = (process.env.REACT_APP_TEAM_API_BASE || "").replace(
+  /\/$/,
+  "",
+);
+const TEAM_API_URL = TEAM_API_BASE ? `${TEAM_API_BASE}/api/team` : "/api/team";
 
 const emptyRoster = {
   heads: [],
@@ -21,7 +24,9 @@ const Team = () => {
 
     const fetchTeam = async () => {
       try {
-        const response = await fetch(TEAM_API_URL, { signal: controller.signal });
+        const response = await fetch(TEAM_API_URL, {
+          signal: controller.signal,
+        });
         if (!response.ok) {
           throw new Error(`Failed to fetch team data: ${response.status}`);
         }
@@ -39,13 +44,13 @@ const Team = () => {
         });
         setStatus({ loading: false, error: null });
       } catch (error) {
-        if (!isMounted || error.name === 'AbortError') {
+        if (!isMounted || error.name === "AbortError") {
           return;
         }
-        console.error('[Team] unable to load roster', error);
+        console.error("[Team] unable to load roster", error);
         setStatus({
           loading: false,
-          error: 'Unable to load the team roster right now. Please refresh.',
+          error: "Unable to load the team roster right now. Please refresh.",
         });
       }
     };
@@ -57,8 +62,14 @@ const Team = () => {
     };
   }, []);
 
-  const { heads, associateHeads, seniorCoordinators, juniorCoordinators } = teamData;
-  const allMembers = [...heads, ...associateHeads, ...seniorCoordinators, ...juniorCoordinators];
+  const { heads, associateHeads, seniorCoordinators, juniorCoordinators } =
+    teamData;
+  const allMembers = [
+    ...heads,
+    ...associateHeads,
+    ...seniorCoordinators,
+    ...juniorCoordinators,
+  ];
 
   return (
     <div className="min-h-screen relative overflow-hidden py-8">
@@ -66,7 +77,6 @@ const Team = () => {
       <div className="absolute inset-0 bg-grain opacity-[0.08] pointer-events-none z-0"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-white mb-4">Our Team</h1>
@@ -84,29 +94,41 @@ const Team = () => {
         <div className="border-t border-white/10 my-6"></div>
 
         {status.loading && (
-          <div className="mb-10 text-center text-gray-400">Loading team roster...</div>
+          <div className="mb-10 text-center text-gray-400">
+            Loading team roster...
+          </div>
         )}
 
         {/* Team Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
-            <div className="text-3xl font-bold text-accent-yellow mb-2">{heads.length}</div>
+            <div className="text-3xl font-bold text-accent-yellow mb-2">
+              {heads.length}
+            </div>
             <div className="text-gray-300">Heads</div>
           </div>
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
-            <div className="text-3xl font-bold text-rose-300 mb-2">{associateHeads.length}</div>
+            <div className="text-3xl font-bold text-rose-300 mb-2">
+              {associateHeads.length}
+            </div>
             <div className="text-gray-300">Associate Heads</div>
           </div>
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
-            <div className="text-3xl font-bold text-accent-blue mb-2">{seniorCoordinators.length}</div>
+            <div className="text-3xl font-bold text-accent-blue mb-2">
+              {seniorCoordinators.length}
+            </div>
             <div className="text-gray-300">Senior Coordinators</div>
           </div>
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
-            <div className="text-3xl font-bold text-accent-green mb-2">{juniorCoordinators.length}</div>
+            <div className="text-3xl font-bold text-accent-green mb-2">
+              {juniorCoordinators.length}
+            </div>
             <div className="text-gray-300">Junior Coordinators</div>
           </div>
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
-            <div className="text-3xl font-bold text-purple-400 mb-2">{allMembers.length}</div>
+            <div className="text-3xl font-bold text-purple-400 mb-2">
+              {allMembers.length}
+            </div>
             <div className="text-gray-300">Total Members</div>
           </div>
         </div>
@@ -124,17 +146,23 @@ const Team = () => {
         </div>
 
         <div className="border-t border-white/10 my-6"></div>
-        
+
         {/* Associate Heads Section */}
         {associateHeads.length > 0 && (
           <>
             <div className="mb-16">
               <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-white mb-4">Associate Heads</h2>
+                <h2 className="text-3xl font-bold text-white mb-4">
+                  Associate Heads
+                </h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {associateHeads.map((member) => (
-                  <MemberCard key={member.id} member={member} role="associate" />
+                  <MemberCard
+                    key={member.id}
+                    member={member}
+                    role="associate"
+                  />
                 ))}
               </div>
             </div>
@@ -146,7 +174,9 @@ const Team = () => {
         {/* Senior Coordinators Section */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-white mb-4">Senior Coordinators</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Senior Coordinators
+            </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {seniorCoordinators.map((member) => (
@@ -160,7 +190,9 @@ const Team = () => {
         {/* Junior Coordinators Section */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-white mb-4">Junior Coordinators</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Junior Coordinators
+            </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {juniorCoordinators.map((member) => (

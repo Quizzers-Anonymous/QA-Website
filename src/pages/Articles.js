@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import articles from '../data/articles.json';
+import React, { useState } from "react";
+import articles from "../data/articles.json";
 
 const Articles = () => {
   const [selectedArticle, setSelectedArticle] = useState(null);
 
   const formatDate = (dateString) => {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return new Date(dateString).toLocaleDateString('en-US', options);
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return new Date(dateString).toLocaleDateString("en-US", options);
   };
 
   const handleReadMore = (article) => {
@@ -21,16 +21,26 @@ const Articles = () => {
   if (selectedArticle) {
     return (
       <div className="min-h-screen relative overflow-hidden py-8">
-      {/* Global grain overlay */}
+        {/* Global grain overlay */}
         <div className="absolute inset-0 bg-grain opacity-[0.08] pointer-events-none z-0"></div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
           {/* Back button */}
-          <button 
+          <button
             onClick={handleBackToList}
             className="flex items-center space-x-2 text-accent-blue hover:text-blue-400 transition-colors mb-8"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
             <span>Back to Articles</span>
           </button>
@@ -39,17 +49,39 @@ const Articles = () => {
           <article className="bg-dark-card rounded-lg border border-dark-border overflow-hidden shadow-lg">
             {/* Article Header */}
             <div className="p-8 border-b border-dark-border">
-              <h1 className="text-3xl lg:text-4xl font-bold text-dark-text mb-4">{selectedArticle.title}</h1>
+              <h1 className="text-3xl lg:text-4xl font-bold text-dark-text mb-4">
+                {selectedArticle.title}
+              </h1>
               <div className="flex items-center space-x-6 text-sm text-dark-text-secondary">
                 <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  <svg
+                    className="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                    />
                   </svg>
                   <span className="font-medium">{selectedArticle.author}</span>
                 </div>
                 <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  <svg
+                    className="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
                   </svg>
                   <span>{formatDate(selectedArticle.date)}</span>
                 </div>
@@ -60,12 +92,15 @@ const Articles = () => {
             <div className="p-8">
               <div className="space-y-8">
                 {selectedArticle.content.map((section, index) => (
-                  <div key={`section-${selectedArticle.id}-${index}`} className="space-y-6">
+                  <div
+                    key={`section-${selectedArticle.id}-${index}`}
+                    className="space-y-6"
+                  >
                     {/* Paragraph */}
                     <p className="text-base leading-relaxed text-dark-text-secondary">
                       {section.paragraph}
                     </p>
-                    
+
                     {/* Image */}
                     {section.image && (
                       <div className="flex justify-center">
@@ -95,8 +130,9 @@ const Articles = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-dark-text mb-4">Articles</h1>
           <p className="text-xl text-dark-text-secondary max-w-3xl mx-auto">
-            Dive deep into the world of knowledge with our insightful articles. 
-            From quiz strategies to educational insights, discover content that enhances your learning journey.
+            Dive deep into the world of knowledge with our insightful articles.
+            From quiz strategies to educational insights, discover content that
+            enhances your learning journey.
           </p>
         </div>
 
@@ -119,24 +155,48 @@ const Articles = () => {
                     Featured
                   </span>
                 </div>
-                <h2 className="text-3xl font-bold text-dark-text mb-4">{articles[0].title}</h2>
-                <p className="text-dark-text-secondary mb-6">{articles[0].summary}</p>
+                <h2 className="text-3xl font-bold text-dark-text mb-4">
+                  {articles[0].title}
+                </h2>
+                <p className="text-dark-text-secondary mb-6">
+                  {articles[0].summary}
+                </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
                     <div className="flex items-center text-sm text-dark-text-secondary">
-                      <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                      <svg
+                        className="w-4 h-4 mr-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        />
                       </svg>
                       {articles[0].author}
                     </div>
                     <div className="flex items-center text-sm text-dark-text-secondary">
-                      <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      <svg
+                        className="w-4 h-4 mr-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        />
                       </svg>
                       {formatDate(articles[0].date)}
                     </div>
                   </div>
-                  <button 
+                  <button
                     onClick={() => handleReadMore(articles[0])}
                     className="bg-accent-blue text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-200"
                   >
@@ -151,7 +211,10 @@ const Articles = () => {
         {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.slice(1).map((article) => (
-            <article key={article.id} className="bg-dark-card rounded-lg border border-dark-border overflow-hidden hover:border-accent-blue transition-all duration-300">
+            <article
+              key={article.id}
+              className="bg-dark-card rounded-lg border border-dark-border overflow-hidden hover:border-accent-blue transition-all duration-300"
+            >
               <div className="relative">
                 <img
                   src={article.image}
@@ -159,29 +222,55 @@ const Articles = () => {
                   className="w-full h-48 object-cover"
                 />
               </div>
-              
+
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-dark-text mb-3 line-clamp-2">{article.title}</h3>
-                <p className="text-dark-text-secondary mb-4 line-clamp-3">{article.summary}</p>
-                
+                <h3 className="text-xl font-semibold text-dark-text mb-3 line-clamp-2">
+                  {article.title}
+                </h3>
+                <p className="text-dark-text-secondary mb-4 line-clamp-3">
+                  {article.summary}
+                </p>
+
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center text-sm text-dark-text-secondary">
-                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    <svg
+                      className="w-4 h-4 mr-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                      />
                     </svg>
                     {article.author}
                   </div>
                   <div className="flex items-center text-sm text-dark-text-secondary">
-                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    <svg
+                      className="w-4 h-4 mr-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      />
                     </svg>
                     {formatDate(article.date)}
                   </div>
                 </div>
-                
+
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-dark-text-secondary">Article {article.id}</span>
-                  <button 
+                  <span className="text-sm text-dark-text-secondary">
+                    Article {article.id}
+                  </span>
+                  <button
                     onClick={() => handleReadMore(article)}
                     className="text-accent-cyan font-medium hover:text-cyan-400 transition-colors duration-200"
                   >

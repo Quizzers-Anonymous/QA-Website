@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import logo from './bounce.png'; // your PNG file
+import React, { useEffect, useRef, useState } from "react";
+import logo from "./bounce.png"; // your PNG file
 
 const BouncingLogo = () => {
   const logoRef = useRef(null);

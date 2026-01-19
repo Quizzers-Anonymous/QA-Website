@@ -9,7 +9,7 @@
     "poster": "/media/pictures/events/openguesssr.png",
     "eventStatus": "completed"
   },
-    {
+  {
     "id": 2,
     "title": "The Odyssey - Mythology Quiz",
     "description": "A quiz exploring the myths and legends of the Greek, Romans, Hindu, Islam, Chinese and more!",
@@ -19,7 +19,7 @@
     "poster": "/media/pictures/events/mythQuiz.png",
     "eventStatus": "completed"
   },
-    {
+  {
     "id": 3,
     "title": "Lokesh Kanakaraj Quiz and Coolie movie discussion",
     "description": "A quiz on the famed director Loki and a discussion on his then new hyped movie Coolie.",
@@ -29,7 +29,7 @@
     "poster": "/media/pictures/events/coolie.png",
     "eventStatus": "completed"
   },
-    {
+  {
     "id": 4,
     "title": "Sound Check - Music Quiz",
     "description": "Pop, rap, kutthu paatu, carnatic,.... A Quiz celebrating one of humanity's greatest discovery - Music!",
@@ -39,7 +39,7 @@
     "poster": "/media/pictures/events/soundcheck.png",
     "eventStatus": "completed"
   },
-    {
+  {
     "id": 5,
     "title": "Icebreaker25's Quiz",
     "description": "Tick-Tock-Tick-Tock...The Clock's ticking, mind's racing, and the fire of the competition is set ablaze.",
@@ -49,7 +49,7 @@
     "poster": "/media/pictures/events/Icebreaker.jpg",
     "eventStatus": "completed"
   },
-    {
+  {
     "id": 6,
     "title": "Arena Sports & Gaming Quiz",
     "description": "Press X to Trivia Quizzers Anonymous presents a Sports and gaming quiz for Agni 2025",
@@ -59,7 +59,7 @@
     "poster": "/media/pictures/events/arena.jpg",
     "eventStatus": "completed"
   },
-    {
+  {
     "id": 7,
     "title": "Kollywood Quiz",
     "description": "'arangam adhirum whistle uh parakum eehhh' when Quizzers Anonymous shows up with the much awaited KOLLYWOOD QUIZ",
@@ -69,7 +69,7 @@
     "poster": "/media/pictures/events/kollywood.jpg",
     "eventStatus": "completed"
   },
-    {
+  {
     "id": 8,
     "title": "Cuisine  Quiz",
     "description": "LET HIM COOK - An Ultimate Food Quiz 👨‍🍳\nWhere taste meets trivia and flavor meets fun!",
@@ -79,7 +79,7 @@
     "poster": "/media/pictures/events/cuisine.jpg",
     "eventStatus": "completed"
   },
-    {
+  {
     "id": 9,
     "title": "Three Dragons Quiz",
     "description": "Welcome to the Three Dragons Quiz, where cinema, music, and fandom collide in a showdown of brains, passion, and pop culture power! ",
@@ -89,7 +89,7 @@
     "poster": "/media/pictures/events/3dragon.mp4",
     "eventStatus": "completed"
   },
-    {
+  {
     "id": 10,
     "title": "Animation Quiz",
     "description": "From Tom & Jerry to Totoro from Spider-Verse to Spirited away we've packed every frame of fun into one exciting event",
@@ -99,7 +99,7 @@
     "poster": "/media/pictures/events/animation.jpeg",
     "eventStatus": "completed"
   },
-    {
+  {
     "id": 11,
     "title": "Safety Slide Showdown",
     "description": "SAFETY SLIDE CONTEST, where you meme your way to glory, and creativity meets comedy!",
@@ -107,9 +107,9 @@
     "time": "12:00 PM",
     "venue": "QA Banter WhatsApp Group",
     "poster": "/media/pictures/events/meme.jpeg",
-    "eventStatus": "upcoming"
+    "eventStatus": "completed"
   },
-    {
+  {
     "id": 12,
     "title": "IPL Auction",
     "description": "Mugavari '26 Quizzers Anonymous X Guindy Times Present IPL Auction",
@@ -117,7 +117,6 @@
     "time": "05:00 PM",
     "venue": "Online  ",
     "poster": "/media/pictures/events/ipl.mp4",
-    "eventStatus": "upcoming"
+    "eventStatus": "completed"
   }
-
 ]

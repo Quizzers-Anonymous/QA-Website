@@ -1,10 +1,18 @@
 /* Local font overrides and font-display fallback */
 @font-face {
-  font-family: 'Honk';
-  src: local('Honk'), local('Honk-Regular');
+  font-family: "Honk";
+  src: local("Honk"), local("Honk-Regular");
   /* We keep using Google-hosted font as a fallback; font-display ensures text is visible immediately */
   font-display: swap;
 }
 
 /* optional: make sure body uses swap-friendly stack */
-body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Honk", sans-serif; }
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Honk",
+    sans-serif;
+}

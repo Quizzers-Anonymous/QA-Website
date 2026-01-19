@@ -1,20 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
-const InstagramPostEmbed = ({ url = "https://www.instagram.com/p/DMAe-fcSvCb/" }) => {
+const InstagramPostEmbed = ({
+  url = "https://www.instagram.com/p/DMAe-fcSvCb/",
+}) => {
   const [EmbedComponent, setEmbedComponent] = useState(null);
 
   useEffect(() => {
     let mounted = true;
     // Dynamically import the heavy embed component only when this component is mounted
-    import('react-social-media-embed')
+    import("react-social-media-embed")
       .then((mod) => {
         if (mounted) setEmbedComponent(() => mod.InstagramEmbed);
       })
       .catch(() => {
         // ignore, we will show fallback
       });
-    return () => { mounted = false; };
+    return () => {
+      mounted = false;
+    };
   }, []);
 
   if (!EmbedComponent) {
@@ -34,9 +38,9 @@ const InstagramPostEmbed = ({ url = "https://www.instagram.com/p/DMAe-fcSvCb/" }
         height={480}
         hideCaption={false}
         style={{
-          backgroundColor: '#1a1a1a',
-          borderRadius: '8px',
-          overflow: 'hidden',
+          backgroundColor: "#1a1a1a",
+          borderRadius: "8px",
+          overflow: "hidden",
         }}
       />
     </div>
@@ -44,7 +48,7 @@ const InstagramPostEmbed = ({ url = "https://www.instagram.com/p/DMAe-fcSvCb/" }
 };
 
 InstagramPostEmbed.propTypes = {
-  url: PropTypes.string
+  url: PropTypes.string,
 };
 
 export default InstagramPostEmbed;
