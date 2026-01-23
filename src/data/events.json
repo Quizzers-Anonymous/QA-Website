@@ -112,11 +112,21 @@
   {
     "id": 12,
     "title": "IPL Auction",
-    "description": "Mugavari '26 Quizzers Anonymous X Guindy Times Present IPL Auction",
+    "description": "Mugavari '26 Quizzers Anonymous X Guindy Times Presents IPL Auction",
     "date": "17/01/2026",
     "time": "05:00 PM",
-    "venue": "Online  ",
+    "venue": "Online",
     "poster": "/media/pictures/events/ipl.mp4",
+    "eventStatus": "completed"
+  },
+  {
+    "id": 13,
+    "title": "Litblaze Fandom Quiz",
+    "description": "Quizzers Anonymous X LitClub Presents Litblaze Fandom Quiz",
+    "date": "24/01/2026",
+    "time": "10:30 AM",
+    "venue": "ACT",
+    "poster": "/media/pictures/events/litblaze.jpg",
     "eventStatus": "completed"
   }
 ]
