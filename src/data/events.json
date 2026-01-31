@@ -7,6 +7,7 @@
     "time": "4:00 PM",
     "venue": "Google Meet",
     "poster": "/media/pictures/events/openguesssr.png",
+    "drivelink": "https://drive.google.com/file/d/16sFFQBkClLmD2u6tqxuvb-9IvA7lA98-/view?usp=drive_link",
     "eventStatus": "completed"
   },
   {
@@ -17,6 +18,7 @@
     "time": "5:00 PM",
     "venue": "Google Meet",
     "poster": "/media/pictures/events/mythQuiz.png",
+    "drivelink": "https://drive.google.com/file/d/1RcbEYZpzDvEtWKy3g0XmWV32b7qblwmr/view?usp=drive_link",
     "eventStatus": "completed"
   },
   {
@@ -27,6 +29,7 @@
     "time": "8:00 PM",
     "venue": "Google Meet",
     "poster": "/media/pictures/events/coolie.png",
+    "drivelink": "https://drive.google.com/file/d/1sAGmlnnk3dn84MTvuI7r4eQFl2Qb_jxg/view?usp=drive_link",
     "eventStatus": "completed"
   },
   {
@@ -37,6 +40,7 @@
     "time": "4:45 PM",
     "venue": "Red Building Room 75",
     "poster": "/media/pictures/events/soundcheck.png",
+    "drivelink": "https://drive.google.com/file/d/1KqVUkLNumYPtws1CQ-ZdRQVc6X23TD1a/view?usp=drive_link",
     "eventStatus": "completed"
   },
   {
@@ -45,8 +49,9 @@
     "description": "Tick-Tock-Tick-Tock...The Clock's ticking, mind's racing, and the fire of the competition is set ablaze.",
     "date": "07/10/2025",
     "time": "1:00 PM",
-    "venue": "Red Building Room 75",
+    "venue": "Turing Hall, DCSE",
     "poster": "/media/pictures/events/Icebreaker.jpg",
+    "drivelink": "https://drive.google.com/file/d/1w3GgwzjRr6QYpUCssbqJ0Eh4QQdf9xVg/view?usp=drive_link",
     "eventStatus": "completed"
   },
   {
@@ -57,6 +62,7 @@
     "time": "10:30 AM",
     "venue": "Red Building Room 75",
     "poster": "/media/pictures/events/arena.jpg",
+    "drivelink": "",
     "eventStatus": "completed"
   },
   {
@@ -67,6 +73,7 @@
     "time": "10:30 AM",
     "venue": "Red Building Room 75",
     "poster": "/media/pictures/events/kollywood.jpg",
+    "drivelink": "https://drive.google.com/file/d/1hbqVz-PfD03sKO0i-_6Z1_9wCmlrNzkj/view?usp=drive_link",
     "eventStatus": "completed"
   },
   {
@@ -77,16 +84,18 @@
     "time": "09:30 AM",
     "venue": "2nd Floor, Mini Auditorium, DECE",
     "poster": "/media/pictures/events/cuisine.jpg",
+    "drivelink": "https://drive.google.com/file/d/1G3iYU3cmyfPDDTGD9pdZQ1FYiRZKI0SI/view?usp=drive_link",
     "eventStatus": "completed"
   },
   {
     "id": 9,
     "title": "Three Dragons Quiz",
-    "description": "Welcome to the Three Dragons Quiz, where cinema, music, and fandom collide in a showdown of brains, passion, and pop culture power! ",
+    "description": "Three Dragons Quiz, where cinema, music, and fandom collide in a showdown of brains, passion, and pop culture power! ",
     "date": "25/10/2025",
     "time": "09:30 AM",
     "venue": "Turing Hall, DCSE",
     "poster": "/media/pictures/events/3dragon.mp4",
+    "drivelink": "https://drive.google.com/file/d/1fpCozOTr5OYWgcKfDdIwUyLTRfE_2ERQ/view?usp=drive_link",
     "eventStatus": "completed"
   },
   {
@@ -97,26 +106,29 @@
     "time": "09:30 AM",
     "venue": "IST 2nd Floor",
     "poster": "/media/pictures/events/animation.jpeg",
+    "drivelink": "https://drive.google.com/file/d/1jLF-4JTBZZxyLh6BuYWgyTsM9jzD-wLa/view?usp=sharing",
     "eventStatus": "completed"
   },
   {
     "id": 11,
     "title": "Safety Slide Showdown",
-    "description": "SAFETY SLIDE CONTEST, where you meme your way to glory, and creativity meets comedy!",
+    "description": "SAFETY SLIDE CONTEST - Where you meme your way to glory, and creativity meets comedy!",
     "date": "17/01/2026",
     "time": "12:00 PM",
     "venue": "QA Banter WhatsApp Group",
     "poster": "/media/pictures/events/meme.jpeg",
+    "drivelink": "",
     "eventStatus": "completed"
   },
   {
     "id": 12,
     "title": "IPL Auction",
-    "description": "Mugavari '26 Quizzers Anonymous X Guindy Times Presents IPL Auction",
+    "description": "Mugavari '26 - Quizzers Anonymous X Guindy Times Presents IPL Auction",
     "date": "17/01/2026",
     "time": "05:00 PM",
     "venue": "Online",
     "poster": "/media/pictures/events/ipl.mp4",
+    "drivelink": "https://drive.google.com/file/d/16VYzwTzM6eHecWLYtNvNeM7tMmBoqxK8/view?usp=drive_link",
     "eventStatus": "completed"
   },
   {
@@ -125,8 +137,20 @@
     "description": "Quizzers Anonymous X LitClub Presents Litblaze Fandom Quiz",
     "date": "24/01/2026",
     "time": "10:30 AM",
-    "venue": "ACT",
+    "venue": "Umayal Ramanathan Teaching Complex (UTC)",
     "poster": "/media/pictures/events/litblaze.jpg",
+    "drivelink": "",
+    "eventStatus": "completed"
+  },
+  {
+    "id": 14,
+    "title": "Mellinam Quiz",
+    "description": "Quizzers Anonymous X NSS Unit - 8 Presents Mellinam Quiz",
+    "date": "25/01/2026",
+    "time": "10:30 AM",
+    "venue": "ACT - New Auditorium",
+    "poster": "/media/pictures/events/wip.png",
+    "drivelink": "https://drive.google.com/file/d/1U094ITux2W23zUemzKJlCX0OIQZRByF3/view?usp=sharing",
     "eventStatus": "completed"
   }
 ]
