@@ -3,6 +3,7 @@
 This guide will help you add new content to the Quizzers Anonymous website. All content is managed through JSON files in the `src/data/` directory.
 
 ## Table of Contents
+
 - [Adding New Events](#adding-new-events)
 - [Adding New Articles](#adding-new-articles)
   - [Instagram Articles (Recommended)](#instagram-articles-recommended)
@@ -19,6 +20,7 @@ This guide will help you add new content to the Quizzers Anonymous website. All 
 Events are managed in `src/data/events.json`. Each event follows this structure:
 
 ### Event Structure
+
 ```json
 {
   "id": 1,
@@ -28,7 +30,7 @@ Events are managed in `src/data/events.json`. Each event follows this structure:
   "time": "HH:MM PM/AM",
   "venue": "Location or platform",
   "poster": "/media/pictures/events/poster-name.png",
-  "reportUrl": "https://drive.google.com/file/d/...",
+  "drivelink": "https://drive.google.com/file/d/...",
   "eventStatus": "upcoming" | "completed"
 },
 ```
@@ -43,6 +45,7 @@ Events are managed in `src/data/events.json`. Each event follows this structure:
    - `"completed"` for past events with reports
 
 ### Example Event Entry
+
 ```json
 {
   "id": 5,
@@ -52,7 +55,7 @@ Events are managed in `src/data/events.json`. Each event follows this structure:
   "time": "6:00 PM",
   "venue": "Red Building Room 75",
   "poster": "/media/pictures/events/sci-tech-quiz.png",
-  "reportUrl": "",
+  "drivelink": "",
   "eventStatus": "upcoming"
 }
 ```
@@ -62,6 +65,7 @@ Events are managed in `src/data/events.json`. Each event follows this structure:
 ## Adding New Articles
 
 We have two article systems:
+
 1. **Expandable Articles** (`src/pages/Articles.js`) - Interactive articles with full content
 2. **Instagram Articles** (`src/data/newArticles.json`) - Articles that redirect to Instagram posts
 
@@ -70,6 +74,7 @@ We have two article systems:
 Instagram articles are managed in `src/data/newArticles.json` and redirect users to Instagram posts.
 
 #### Instagram Article Structure
+
 ```json
 {
   "id": 1,
@@ -94,13 +99,14 @@ Instagram articles are managed in `src/data/newArticles.json` and redirect users
    - `"Current Affairs"`, `"Technology"`, `"Science"`
 
 #### Example Instagram Article Entry
+
 ```json
 {
   "id": 10,
   "title": "The Evolution of Quiz Shows",
   "description": "From radio to television to digital platforms - the fascinating journey of quiz competitions",
   "author": "Team Member Name",
-  "category": "Entertainment", 
+  "category": "Entertainment",
   "date": "15/10/2025",
   "image": "/media/pictures/articles/quiz-evolution.jpeg",
   "instagramUrl": "https://www.instagram.com/p/ABC123DEF456/"
@@ -112,6 +118,7 @@ Instagram articles are managed in `src/data/newArticles.json` and redirect users
 Expandable articles are hardcoded in `src/pages/Articles.js` with full content display.
 
 #### Expandable Article Structure
+
 ```javascript
 {
   id: 1,
@@ -134,10 +141,11 @@ Expandable articles are hardcoded in `src/pages/Articles.js` with full content d
 4. **Upload image** to `public/media/pictures/articles/` (if using custom image)
 
 #### Example Expandable Article Entry
+
 ```javascript
 {
   id: 8,
-  title: "Quiz Preparation Strategies for Beginners", 
+  title: "Quiz Preparation Strategies for Beginners",
   excerpt: "Essential tips and techniques for new quiz enthusiasts to improve their performance and knowledge retention.",
   author: "Priya Sharma",
   date: "2025-09-20",
@@ -155,6 +163,7 @@ Expandable articles are hardcoded in `src/pages/Articles.js` with full content d
 Gallery images are managed in `src/data/galleryImages.json`.
 
 ### Gallery Image Structure
+
 ```json
 {
   "id": 1,
@@ -176,6 +185,7 @@ Gallery images are managed in `src/data/galleryImages.json`.
    - `"workshops"` for workshop/training photos
 
 ### Example Gallery Entry
+
 ```json
 {
   "id": 15,
@@ -193,6 +203,7 @@ Gallery images are managed in `src/data/galleryImages.json`.
 Quiz sets are managed in `src/data/quizSets.json`.
 
 ### Quiz Set Structure
+
 ```json
 {
   "id": 1,
@@ -220,6 +231,7 @@ Quiz sets are managed in `src/data/quizSets.json`.
    - `"Current Affairs"`
 
 ### Example Quiz Set Entry
+
 ```json
 {
   "id": 8,
@@ -237,6 +249,7 @@ Quiz sets are managed in `src/data/quizSets.json`.
 ## Image Management
 
 ### Directory Structure
+
 ```
 public/
 └── media/
@@ -326,6 +339,7 @@ Team member portraits are no longer stored in `public/media`. Upload them to Ver
 ### Getting Help
 
 If you encounter issues:
+
 1. Check the browser console for error messages
 2. Validate your JSON using online validators
 3. Contact the development team
@@ -336,14 +350,16 @@ If you encounter issues:
 ## Quick Reference
 
 ### File Locations
+
 - Events: `src/data/events.json`
-- Instagram Articles: `src/data/newArticles.json` 
+- Instagram Articles: `src/data/newArticles.json`
 - Expandable Articles: `src/pages/Articles.js`
 - Gallery: `src/data/galleryImages.json`
 - Quiz Sets: `src/data/quizSets.json`
 - Images: `public/media/pictures/`
 
 ### Common Commands
+
 ```bash
 # Start development server
 npm start

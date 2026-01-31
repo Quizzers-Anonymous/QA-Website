@@ -8,7 +8,7 @@ For detailed instructions on how to add new content (events, articles, gallery i
 
 ## Features
 
-- **Event Management**: Display upcoming and completed quiz events with details
+- **Event Management**: Display upcoming and completed quiz events with details (events may include an optional Drive `drivelink` for reports; Event cards show an "Report" button when present)
 - **Team Showcase**: Meet our current team members and alumni network
 - **Articles Section**: Knowledge sharing through informative articles
 - **Quiz Sets**: Access our curated quiz question sets
@@ -36,22 +36,26 @@ For detailed instructions on how to add new content (events, articles, gallery i
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Aravindhan-KS/QA-Website.git
    cd QA-Website
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Start the development server (frontend-only fallback):
+
    ```bash
    npm start
    ```
 
    To exercise the protected team photo APIs locally, run Vercel's unified dev server instead:
+
    ```bash
    npx vercel dev
    ```
