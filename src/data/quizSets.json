@@ -128,5 +128,15 @@
     "date": "11/1/2026",
     "image": "/media/pictures/quizsets/dance.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DTYAICQEgiU/?img_index=1"
+  },
+  {
+    "id": 13,
+    "title": "CS In Movies",
+    "description": "ACM and QA Collab Quizzers Sundae Set",
+    "category": "Technology",
+    "questions": 6,
+    "date": "15/2/2026",
+    "image": "/media/pictures/quizsets/acmXqa.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DUxrxEEjG1u/?img_index=1"
   }
 ]
