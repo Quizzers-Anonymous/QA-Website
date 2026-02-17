@@ -152,5 +152,27 @@
     "poster": "/media/pictures/events/mellinam.jpeg",
     "drivelink": "https://drive.google.com/file/d/1U094ITux2W23zUemzKJlCX0OIQZRByF3/view?usp=sharing",
     "eventStatus": "completed"
+  },
+  {
+    "id": 15,
+    "title": "Tea Kadai Quiz",
+    "description": "A quiz on geopolitics and history",
+    "date": "13/02/2026",
+    "time": "04:45 PM",
+    "venue": "CEG Square",
+    "poster": "/media/pictures/events/teakadai.jpeg",
+    "drivelink": "",
+    "eventStatus": "completed"
+  },
+  {
+    "id": 16,
+    "title": "MCU vs DC Quiz Showdown",
+    "description": "Quizzers Anonymous X CSEA Presents MCU vs DC Quiz Showdown",
+    "date": "19/02/2026",
+    "time": "10:00 AM",
+    "venue": "Turing Hall, DCSE",
+    "poster": "/media/pictures/events/mcuvsdc.jpeg",
+    "drivelink": "",
+    "eventStatus": "upcoming"
   }
 ]
