@@ -10,7 +10,7 @@ For detailed instructions on how to add new content (events, articles, gallery i
 
 - **Event Management**: Display upcoming and completed quiz events with details (events may include an optional Drive `drivelink` for reports; Event cards show an "Report" button when present)
 - **Team Showcase**: Meet our current team members and alumni network
-- **Articles Section**: Knowledge sharing through informative articles
+- **Articles Section**: Knowledge sharing through informative articles and videos
 - **Quiz Sets**: Access our curated quiz question sets
 - **Interactive Gallery**: Browse photos from our events and activities
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
