@@ -1,6 +1,6 @@
 {
   "name": "qa-website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^6.9.1",
@@ -15,6 +15,7 @@
     "react-scripts": "5.0.1",
     "react-snowfall": "^2.4.0",
     "react-social-media-embed": "^2.5.18",
+    "tailwindcss": "^3.4.19",
     "web-vitals": "^5.1.0"
   },
   "scripts": {
@@ -43,7 +44,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17"
+    "postcss": "^8.5.6"
   }
 }
