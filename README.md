@@ -48,7 +48,13 @@ For detailed instructions on how to add new content (events, articles, gallery i
    npm install
    ```
 
-3. Start the development server (frontend-only fallback):
+   For a clean, reproducible install that matches the exact versions in `package-lock.json`:
+
+   ```bash
+   npm ci
+   ```
+
+3. Start the development server (frontend-only):
 
    ```bash
    npm start

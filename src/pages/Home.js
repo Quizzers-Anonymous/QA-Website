@@ -21,7 +21,7 @@ const Home = () => {
         <BouncingLogo />
         <Snowfall
           color="rgba(255, 255, 255, 0.3)"
-          snowflakeCount={100}
+          snowflakeCount={250}
           style={{
             position: "absolute",
             width: "100%",

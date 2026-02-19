@@ -6,6 +6,11 @@
       "src": "logo.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "bounce.png",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ],
   "start_url": ".",

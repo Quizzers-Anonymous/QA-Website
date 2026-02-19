@@ -5,8 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Events from "./pages/Events";
 import QuizSets from "./pages/QuizSets";
-import Articles from "./pages/Articles";
-import NewArticles from "./pages/NewArticles";
+import Articles from "./pages/NewArticles";
 import Gallery from "./pages/Gallery";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
@@ -62,20 +61,9 @@ function App() {
               element={
                 <PageWrapper
                   title="Articles"
-                  description="Read insightful articles and blog posts about quizzing and general knowledge."
-                >
-                  <Articles />
-                </PageWrapper>
-              }
-            />
-            <Route
-              path="/new-articles"
-              element={
-                <PageWrapper
-                  title="New Articles"
                   description="Check out our latest articles and updates."
                 >
-                  <NewArticles />
+                  <Articles />
                 </PageWrapper>
               }
             />

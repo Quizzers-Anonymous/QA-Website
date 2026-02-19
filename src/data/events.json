@@ -161,7 +161,7 @@
     "time": "04:45 PM",
     "venue": "CEG Square",
     "poster": "/media/pictures/events/teakadai.jpeg",
-    "drivelink": "",
+    "drivelink": "https://drive.google.com/file/d/1PIOen0sVyTW1a-D34R9RzIJi4Wl1S7NZ/view?usp=sharing",
     "eventStatus": "completed"
   },
   {
@@ -173,6 +173,6 @@
     "venue": "Turing Hall, DCSE",
     "poster": "/media/pictures/events/mcuvsdc.jpeg",
     "drivelink": "",
-    "eventStatus": "upcoming"
+    "eventStatus": "completed"
   }
 ]
