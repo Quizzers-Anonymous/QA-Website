@@ -48,10 +48,9 @@ const Footer = () => {
                   Quiz Sets
                 </a>
               </li>
-              {/*<li><a href="/articles" className="text-dark-text-secondary hover:text-accent-blue">Articles</a></li>*/}
               <li>
                 <a
-                  href="/new-articles"
+                  href="/articles"
                   className="text-dark-text-secondary hover:text-accent-blue"
                 >
                   Articles
