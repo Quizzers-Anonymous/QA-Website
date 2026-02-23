@@ -138,5 +138,15 @@
     "date": "15/2/2026",
     "image": "/media/pictures/quizsets/acmXqa.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DUxrxEEjG1u/?img_index=1"
+  },
+  {
+    "id": 14,
+    "title": "Into The Wild Quiz",
+    "description": "A quiz where curiosity runs free and every question takes you a little deeper into the jungle of knowledge.",
+    "category": "Technology",
+    "questions": 7,
+    "date": "22/2/2026",
+    "image": "/media/pictures/quizsets/intotheWild.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DVDCJK1krFw/?img_index=1"
   }
 ]
