@@ -174,5 +174,27 @@
     "poster": "/media/pictures/events/mcuvsdc.jpeg",
     "drivelink": "",
     "eventStatus": "completed"
+  },
+  {
+    "id": 17,
+    "title": "The Biz Quiz",
+    "description": "Quizzers Anonymous X AUSEC -  Presents The Biz Quiz",
+    "date": "23/02/2026",
+    "time": "09:30 AM",
+    "venue": "Turing Hall, DCSE",
+    "poster": "/media/pictures/events/biz.jpeg",
+    "drivelink": "",
+    "eventStatus": "completed"
+  },
+  {
+    "id": 18,
+    "title": "Odyssey - The Ultimate Travel Quest",
+    "description": "Quizzers Anonymous Presents The Ultimate Travel Quest",
+    "date": "13/03/2026",
+    "time": "10:00 AM",
+    "venue": "2nd Floor, Mini Auditorium, DECE",
+    "poster": "/media/pictures/events/odyssey.jpeg",
+    "drivelink": "",
+    "eventStatus": "upcoming"
   }
 ]
