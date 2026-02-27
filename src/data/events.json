@@ -188,6 +188,17 @@
   },
   {
     "id": 18,
+    "title": "Meme Quiz",
+    "description": "Quizzers Anonymous Presents The Meme Quiz",
+    "date": "26/02/2026",
+    "time": "10:30 AM",
+    "venue": "Red Building Room 73",
+    "poster": "/media/pictures/events/meme2.jpeg",
+    "drivelink": "",
+    "eventStatus": "completed"
+  },
+  {
+    "id": 19,
     "title": "Odyssey - The Ultimate Travel Quest",
     "description": "Quizzers Anonymous Presents The Ultimate Travel Quest",
     "date": "13/03/2026",
