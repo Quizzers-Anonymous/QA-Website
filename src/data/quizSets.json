@@ -143,10 +143,20 @@
     "id": 14,
     "title": "Into The Wild Quiz",
     "description": "A quiz where curiosity runs free and every question takes you a little deeper into the jungle of knowledge.",
-    "category": "Technology",
+    "category": "Science",
     "questions": 7,
     "date": "22/2/2026",
     "image": "/media/pictures/quizsets/intothewild.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DVDCJK1krFw/?img_index=1"
+  },
+  {
+    "id": 15,
+    "title": "Robotics Quiz",
+    "description": "From circuits to code, this week's Quizzers Sundae is back with the theme of Robotics",
+    "category": "Technology",
+    "questions": 8,
+    "date": "28/2/2026",
+    "image": "/media/pictures/quizsets/robo.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DVTeBwziK_-/?img_index=1"
   }
 ]
