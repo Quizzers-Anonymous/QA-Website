@@ -199,6 +199,17 @@
   },
   {
     "id": 19,
+    "title": "General Quiz",
+    "description": "Quizzers Anonymous Presents The General Quiz",
+    "date": "28/02/2026",
+    "time": "10:30 AM",
+    "venue": "Red Building Room 73",
+    "poster": "/media/pictures/events/general.jpeg",
+    "drivelink": "",
+    "eventStatus": "completed"
+  },
+  {
+    "id": 20,
     "title": "Odyssey - The Ultimate Travel Quest",
     "description": "Quizzers Anonymous Presents The Ultimate Travel Quest",
     "date": "13/03/2026",
