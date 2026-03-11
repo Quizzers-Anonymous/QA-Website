@@ -158,5 +158,15 @@
     "date": "28/2/2026",
     "image": "/media/pictures/quizsets/robo.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DVTeBwziK_-/?img_index=1"
+  },
+  {
+    "id": 16,
+    "title": "Literature Quiz",
+    "description": "Where books meet brains. Welcome to Quizzers Sundae #22 - Literature Edition.",
+    "category": "Arts & Literature",
+    "questions": 7,
+    "date": "8/3/2026",
+    "image": "/media/pictures/quizsets/lit.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DVoSSYkkhVT/?img_index=1"
   }
 ]
