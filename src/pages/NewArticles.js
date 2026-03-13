@@ -140,6 +140,8 @@ const NewArticles = () => {
                   <img
                     src={article.image}
                     alt={article.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full aspect-[5/5] object-cover"
                   />
                 </div>

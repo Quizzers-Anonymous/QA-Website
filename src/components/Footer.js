@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -33,52 +34,52 @@ const Footer = () => {
             </h3>
             <ul className="space-y-1 text-sm">
               <li>
-                <a
-                  href="/events"
+                <Link
+                  to="/events"
                   className="text-dark-text-secondary hover:text-accent-blue"
                 >
                   Events
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/quiz-sets"
+                <Link
+                  to="/quiz-sets"
                   className="text-dark-text-secondary hover:text-accent-blue"
                 >
                   Quiz Sets
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/articles"
+                <Link
+                  to="/articles"
                   className="text-dark-text-secondary hover:text-accent-blue"
                 >
                   Articles
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/gallery"
+                <Link
+                  to="/gallery"
                   className="text-dark-text-secondary hover:text-accent-blue"
                 >
                   Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/team"
+                <Link
+                  to="/team"
                   className="text-dark-text-secondary hover:text-accent-blue"
                 >
                   Team
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="text-dark-text-secondary hover:text-accent-blue"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

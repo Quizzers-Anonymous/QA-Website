@@ -106,6 +106,8 @@ const Gallery = () => {
                 <img
                   src={image.src}
                   alt={image.caption || "Gallery image"}
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 {/* Overlay on hover */}

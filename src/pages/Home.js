@@ -1,11 +1,38 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import BouncingLogo from "../components/BouncingLogo";
-import Snowfall from "react-snowfall";
+
+const Snowfall = React.lazy(() => import("react-snowfall"));
 const InstagramPostEmbed = React.lazy(
   () => import("../components/InstagramPostEmbed"),
 );
 
 const Home = () => {
+  const [showSnowfall, setShowSnowfall] = useState(false);
+  const [snowflakeCount, setSnowflakeCount] = useState(120);
+
+  useEffect(() => {
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    const connection =
+      navigator.connection ||
+      navigator.mozConnection ||
+      navigator.webkitConnection;
+    const saveData = Boolean(connection?.saveData);
+    const slowConnection = Boolean(
+      connection && /2g|slow-2g/.test(connection.effectiveType || ""),
+    );
+
+    if (reduceMotion || saveData || slowConnection) {
+      setShowSnowfall(false);
+      return;
+    }
+
+    setShowSnowfall(true);
+    setSnowflakeCount(window.innerWidth < 768 ? 80 : 140);
+  }, []);
+
   return (
     <div>
       {/* Global grain overlay */}
@@ -17,18 +44,24 @@ const Home = () => {
         {/* Grain overlay */}
         <div className="absolute inset-0 bg-grain opacity-20 pointer-events-none"></div>
 
-        {/* Bouncing Logo */}
-        <BouncingLogo />
-        <Snowfall
-          color="rgba(255, 255, 255, 0.3)"
-          snowflakeCount={250}
-          style={{
-            position: "absolute",
-            width: "100%",
-            height: "100%",
-            zIndex: 10,
-          }}
-        />
+        {/* Bouncing Logo + Snowfall share the same absolute fill container */}
+        <div className="absolute inset-0 pointer-events-none">
+          <BouncingLogo />
+          {showSnowfall && (
+            <Suspense fallback={null}>
+              <Snowfall
+                color="rgba(255, 255, 255, 0.25)"
+                snowflakeCount={snowflakeCount}
+                style={{
+                  position: "absolute",
+                  width: "100%",
+                  height: "100%",
+                  zIndex: 10,
+                }}
+              />
+            </Suspense>
+          )}
+        </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fadeIn z-20">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
@@ -45,20 +78,20 @@ const Home = () => {
             curiosity meets competition and knowledge knows no bounds.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/events"
+            <Link
+              to="/events"
               className="bg-white/10 backdrop-blur-lg text-accent-cyan px-8 py-3 rounded-xl font-semibold shadow-lg 
               hover:bg-white/20 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
             >
               Explore Events
-            </a>
-            <a
-              href="/team"
+            </Link>
+            <Link
+              to="/team"
               className="bg-white/10 backdrop-blur-lg border border-white/20 text-accent-blue px-8 py-3 rounded-xl font-semibold 
               hover:bg-white/20 hover:text-white transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
             >
               Meet the Team
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -189,8 +222,8 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-slideUp">
             {/* Event Card */}
-            <a
-              href="/events"
+            <Link
+              to="/events"
               className="group bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-lg 
               hover:bg-white/20 hover:shadow-accent-yellow/30 transition-all duration-300 transform hover:-translate-y-2"
             >
@@ -216,11 +249,11 @@ const Home = () => {
                 Join our exciting quiz competitions and knowledge-sharing
                 sessions.
               </p>
-            </a>
+            </Link>
 
             {/* Quiz Sets Card */}
-            <a
-              href="/quiz-sets"
+            <Link
+              to="/quiz-sets"
               className="group bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-lg 
               hover:bg-white/20 hover:shadow-accent-blue/30 transition-all duration-300 transform hover:-translate-y-2"
             >
@@ -245,11 +278,11 @@ const Home = () => {
               <p className="text-gray-300">
                 Practice with our curated collection of quiz questions.
               </p>
-            </a>
+            </Link>
 
             {/* Gallery Card */}
-            <a
-              href="/gallery"
+            <Link
+              to="/gallery"
               className="group bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-lg 
               hover:bg-white/20 hover:shadow-accent-green/30 transition-all duration-300 transform hover:-translate-y-2"
             >
@@ -272,7 +305,7 @@ const Home = () => {
               <p className="text-gray-300">
                 Relive the memorable moments from our events and activities.
               </p>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

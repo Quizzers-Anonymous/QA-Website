@@ -29,6 +29,8 @@ const MemberCard = ({ member, role }) => {
         <img
           src={member.photo || "/api/placeholder/300/300"}
           alt={member.name}
+          loading="lazy"
+          decoding="async"
           className="w-full h-64 object-cover transition-transform duration-500 ease-in-out hover:scale-110"
         />
       </div>

@@ -18,6 +18,8 @@ const GalleryImage = ({ image, onClick }) => {
       <img
         src={image.src || "/api/placeholder/400/300"}
         alt={image.caption}
+        loading="lazy"
+        decoding="async"
         className={`w-full h-full object-cover transition-all duration-300 group-hover:scale-105 ${
           isLoaded ? "opacity-100" : "opacity-0"
         }`}

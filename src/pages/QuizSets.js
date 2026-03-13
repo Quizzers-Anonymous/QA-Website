@@ -138,6 +138,8 @@ const QuizSets = () => {
                   <img
                     src={quizSet.image}
                     alt={quizSet.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full aspect-[4/5] object-cover"
                   />
                 </div>

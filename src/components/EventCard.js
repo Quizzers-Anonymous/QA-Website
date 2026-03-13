@@ -64,6 +64,8 @@ const EventCard = ({ event }) => {
           <img
             src={mediaUrl}
             alt={event.title}
+            loading="lazy"
+            decoding="async"
             className="w-full aspect-[4/5] object-cover"
           />
         )}

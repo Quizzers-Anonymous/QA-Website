@@ -24,17 +24,17 @@ const InstagramPostEmbed = ({
   if (!EmbedComponent) {
     // lightweight placeholder to avoid network/work on initial render
     return (
-      <div className="instagram-post-container w-[328px] h-[480px] bg-neutral-900 rounded-lg flex items-center justify-center text-gray-400">
+      <div className="instagram-post-container w-full max-w-[328px] aspect-[41/60] bg-neutral-900 rounded-lg flex items-center justify-center text-gray-400">
         <div>Loading preview...</div>
       </div>
     );
   }
 
   return (
-    <div className="instagram-post-container">
+    <div className="instagram-post-container w-full max-w-[328px]">
       <EmbedComponent
         url={url}
-        width={328}
+        width="100%"
         height={480}
         hideCaption={false}
         style={{

@@ -1,34 +1,63 @@
-import React, { useEffect, useRef, useState } from "react";
-import logo from "./bounce.png"; // your PNG file
+import React, { useEffect, useRef } from "react";
+import logo from "./bounce.png";
 
 const BouncingLogo = () => {
   const logoRef = useRef(null);
-  const [pos, setPos] = useState({ x: 100, y: 100 });
-  const [dir, setDir] = useState({ dx: 2, dy: 2 });
+  const positionRef = useRef({ x: 100, y: 100 });
+  const velocityRef = useRef({ dx: 1.1, dy: 1.1 });
+  const frameRef = useRef(null);
 
   useEffect(() => {
     const logoEl = logoRef.current;
     if (!logoEl) return;
 
-    const interval = setInterval(() => {
-      const rect = logoEl.getBoundingClientRect();
-      const parentRect = logoEl.parentElement.getBoundingClientRect();
+    const parentEl = logoEl.parentElement;
+    let logoWidth = 0;
+    let logoHeight = 0;
+    let parentWidth = 0;
+    let parentHeight = 0;
 
-      let newX = pos.x + dir.dx;
-      let newY = pos.y + dir.dy;
-      let newDx = dir.dx;
-      let newDy = dir.dy;
+    const updateBounds = () => {
+      logoWidth = logoEl.offsetWidth;
+      logoHeight = logoEl.offsetHeight;
+      parentWidth = parentEl ? parentEl.clientWidth : window.innerWidth;
+      parentHeight = parentEl ? parentEl.clientHeight : window.innerHeight;
+    };
 
-      // Bounce off edges
-      if (newX <= 0 || newX + rect.width >= parentRect.width) newDx = -dir.dx;
-      if (newY <= 0 || newY + rect.height >= parentRect.height) newDy = -dir.dy;
+    updateBounds();
 
-      setPos({ x: newX, y: newY });
-      setDir({ dx: newDx, dy: newDy });
-    }, 16); // ~60fps
+    const tick = () => {
+      const pos = positionRef.current;
+      const velocity = velocityRef.current;
 
-    return () => clearInterval(interval);
-  }, [pos, dir]);
+      let nextX = pos.x + velocity.dx;
+      let nextY = pos.y + velocity.dy;
+
+      if (nextX <= 0 || nextX + logoWidth >= parentWidth) {
+        velocity.dx = -velocity.dx;
+        nextX = Math.max(0, Math.min(nextX, parentWidth - logoWidth));
+      }
+
+      if (nextY <= 0 || nextY + logoHeight >= parentHeight) {
+        velocity.dy = -velocity.dy;
+        nextY = Math.max(0, Math.min(nextY, parentHeight - logoHeight));
+      }
+
+      positionRef.current = { x: nextX, y: nextY };
+      logoEl.style.transform = `translate3d(${nextX}px, ${nextY}px, 0)`;
+      frameRef.current = window.requestAnimationFrame(tick);
+    };
+
+    frameRef.current = window.requestAnimationFrame(tick);
+    window.addEventListener("resize", updateBounds);
+
+    return () => {
+      window.removeEventListener("resize", updateBounds);
+      if (frameRef.current) {
+        window.cancelAnimationFrame(frameRef.current);
+      }
+    };
+  }, []);
 
   return (
     <img
@@ -36,7 +65,10 @@ const BouncingLogo = () => {
       src={logo}
       alt="Bouncing Logo"
       className="absolute w-20 h-20 pointer-events-none z-10"
-      style={{ left: pos.x, top: pos.y }}
+      style={{
+        transform: "translate3d(100px, 100px, 0)",
+        willChange: "transform",
+      }}
     />
   );
 };
