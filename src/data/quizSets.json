@@ -168,5 +168,15 @@
     "date": "8/3/2026",
     "image": "/media/pictures/quizsets/lit.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DVoSSYkkhVT/?img_index=1"
+  },
+  {
+    "id": 17,
+    "title": "The Feymann League Quiz",
+    "description": "Teaming up with stemhub community for an electrifying STEM challenge - The Feynman League!",
+    "category": "Science",
+    "questions": 9,
+    "date": "22/3/2026",
+    "image": "/media/pictures/quizsets/feymann.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DWMSZDcEm4c/?img_index=1"
   }
 ]
