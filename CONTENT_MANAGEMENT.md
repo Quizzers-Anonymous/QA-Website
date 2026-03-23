@@ -6,8 +6,7 @@ This guide will help you add new content to the Quizzers Anonymous website. All 
 
 - [Adding New Events](#adding-new-events)
 - [Adding New Articles](#adding-new-articles)
-  - [Instagram Articles (Recommended)](#instagram-articles-recommended)
-  - [Expandable Articles (Legacy System)](#expandable-articles-legacy-system)
+  - [Instagram Articles](#instagram-articles)
 - [Adding Gallery Images](#adding-gallery-images)
 - [Adding Quiz Sets](#adding-quiz-sets)
 - [Image Management](#image-management)
@@ -64,14 +63,9 @@ Events are managed in `src/data/events.json`. Each event follows this structure:
 
 ## Adding New Articles
 
-We have two article systems:
+## Instagram Articles
 
-1. **Expandable Articles** (`src/pages/Articles.js`) - Interactive articles with full content
-2. **Instagram Articles** (`src/data/newArticles.json`) - Articles that redirect to Instagram posts
-
-### Instagram Articles (Recommended)
-
-Instagram articles are managed in `src/data/newArticles.json` and redirect users to Instagram posts.
+**Instagram Articles** (`src/data/newArticles.json`) - Articles that redirect to Instagram posts
 
 #### Instagram Article Structure
 
@@ -112,50 +106,6 @@ Instagram articles are managed in `src/data/newArticles.json` and redirect users
   "instagramUrl": "https://www.instagram.com/p/ABC123DEF456/"
 }
 ```
-
-### Expandable Articles (Legacy System)
-
-Expandable articles are hardcoded in `src/pages/Articles.js` with full content display.
-
-#### Expandable Article Structure
-
-```javascript
-{
-  id: 1,
-  title: "Article Title",
-  excerpt: "Brief description or summary of the article",
-  author: "Author Name",
-  date: "YYYY-MM-DD",
-  readTime: "X min read",
-  category: "Category Name",
-  image: "/api/placeholder/400/250", // or actual image path
-  content: "Full article content with HTML formatting..."
-}
-```
-
-#### Steps to Add Expandable Articles
-
-1. **Open** `src/pages/Articles.js`
-2. **Find** the `articles` array (around line 4)
-3. **Add your article** with a unique `id`
-4. **Upload image** to `public/media/pictures/articles/` (if using custom image)
-
-#### Example Expandable Article Entry
-
-```javascript
-{
-  id: 8,
-  title: "Quiz Preparation Strategies for Beginners",
-  excerpt: "Essential tips and techniques for new quiz enthusiasts to improve their performance and knowledge retention.",
-  author: "Priya Sharma",
-  date: "2025-09-20",
-  readTime: "7 min read",
-  category: "Tips & Tricks",
-  image: "/media/pictures/articles/quiz-prep.jpg",
-  content: `<h3>Getting Started</h3><p>Quiz preparation begins with...</p>`
-}
-```
-
 ---
 
 ## Adding Gallery Images
