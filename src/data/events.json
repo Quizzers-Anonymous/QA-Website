@@ -218,5 +218,16 @@
     "poster": "/media/pictures/events/odyssey.jpeg",
     "drivelink": "",
     "eventStatus": "completed"
+  },
+  {
+    "id": 21,
+    "title": "Rewind 2025 Quiz",
+    "description": "Quizzers Anonymous Presents Rewind 2025 Quiz",
+    "date": "27/03/2026",
+    "time": "09:30 AM",
+    "venue": "2nd Floor Classroom, DIST",
+    "poster": "/media/pictures/events/rewind.jpeg",
+    "drivelink": "",
+    "eventStatus": "upcoming"    
   }
 ]
