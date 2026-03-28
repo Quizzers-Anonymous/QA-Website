@@ -178,5 +178,15 @@
     "date": "22/3/2026",
     "image": "/media/pictures/quizsets/feymann.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DWMSZDcEm4c/?img_index=1"
+  },
+  {
+    "id": 18,
+    "title": "Motorsports Quiz",
+    "description": "Race to the podium with this week's Quizzers' Sundae!",
+    "category": "Sports",
+    "questions": 6,
+    "date": "28/3/2026",
+    "image": "/media/pictures/quizsets/motor.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DWat8YoElim/?img_index=1"
   }
 ]
