@@ -216,7 +216,7 @@
     "time": "10:00 AM",
     "venue": "2nd Floor, Mini Auditorium, DECE",
     "poster": "/media/pictures/events/odyssey.jpeg",
-    "drivelink": "",
+    "drivelink": "https://drive.google.com/file/d/16bE6wrxO48V4RxfraWIrbgQuR0UDGL3Z/view?usp=drive_link",
     "eventStatus": "completed"
   },
   {
@@ -227,7 +227,7 @@
     "time": "09:30 AM",
     "venue": "2nd Floor Classroom, DIST",
     "poster": "/media/pictures/events/rewind.jpeg",
-    "drivelink": "",
+    "drivelink": "https://drive.google.com/file/d/1GHJopI6mABp9jppzNLLXcqDE9wxt4Yep/view?usp=drive_link",
     "eventStatus": "completed"    
   }
 ]
