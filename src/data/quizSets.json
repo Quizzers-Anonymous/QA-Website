@@ -188,5 +188,15 @@
     "date": "28/3/2026",
     "image": "/media/pictures/quizsets/motor.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DWat8YoElim/?img_index=1"
+  },
+  {
+    "id": 19,
+    "title": "The End Game",
+    "description": "A quiz about endings, ends and the end",
+    "category": "General Knowledge",
+    "questions": 7,
+    "date": "6/4/2026",
+    "image": "/media/pictures/quizsets/end.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DWxcrc-EuPo/?img_index=1"
   }
 ]
