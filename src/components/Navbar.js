@@ -19,14 +19,14 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50">
-      {/* Frosted background without border */}
-      <div className="bg-white/10 backdrop-blur-2xl shadow-lg">
+      {/* Black accent frosted background */}
+      <div className="bg-black/20 backdrop-blur-3xl shadow-lg border-b border-black/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               <img
-                src="/logo.png"
+                src="/logo-192x192.png"
                 alt="Quizzers Anonymous Logo"
                 className="w-8 h-8 rounded-full object-cover"
               />
@@ -46,8 +46,8 @@ const Navbar = () => {
                   to={item.path}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
                     isActive(item.path)
-                      ? "text-accent-blue bg-white/20 backdrop-blur-md shadow-md"
-                      : "text-white/80 hover:text-accent-blue hover:bg-white/10 hover:backdrop-blur-md hover:shadow-md"
+                      ? "text-white bg-black/40 backdrop-blur-md shadow-md border border-black/50"
+                      : "text-white/80 hover:text-white hover:bg-black/30 hover:backdrop-blur-md hover:shadow-md hover:border hover:border-black/40"
                   }`}
                 >
                   {item.name}
@@ -90,7 +90,7 @@ const Navbar = () => {
           {/* Mobile Navigation */}
           {isOpen && (
             <div className="md:hidden mt-2">
-              <div className="bg-white/10 backdrop-blur-2xl rounded-xl px-3 py-4 space-y-1 shadow-lg">
+              <div className="bg-black/20 backdrop-blur-3xl rounded-xl px-3 py-4 space-y-1 shadow-lg border border-black/30">
                 {navItems.map((item) => (
                   <Link
                     key={item.name}
@@ -98,8 +98,8 @@ const Navbar = () => {
                     onClick={() => setIsOpen(false)}
                     className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
                       isActive(item.path)
-                        ? "text-accent-blue bg-white/20 backdrop-blur-md shadow-md"
-                        : "text-white/80 hover:text-accent-blue hover:bg-white/10 hover:backdrop-blur-md hover:shadow-md"
+                        ? "text-white bg-black/40 backdrop-blur-md shadow-md border border-black/50"
+                        : "text-white/80 hover:text-white hover:bg-black/30 hover:backdrop-blur-md hover:shadow-md hover:border hover:border-black/40"
                     }`}
                   >
                     {item.name}
