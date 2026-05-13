@@ -9,8 +9,13 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    allow:
-      - dependency-type: "all"
+      day: "monday"
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
+    open-pull-requests-limit: 1
+    ignore:
+      - dependency-name: "*"
         update-types:
-          - "version-update:semver-major"
-          - "version-update:semver-minor"
+          - "version-update:semver-patch"
