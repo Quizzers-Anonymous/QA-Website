@@ -198,5 +198,15 @@
     "date": "6/4/2026",
     "image": "/media/pictures/quizsets/end.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DWxcrc-EuPo/?img_index=1"
+  },
+  {
+    "id": 20,
+    "title": "The FIFA World Cup Quiz",
+    "description": "A quiz about the FIFA World Cup",
+    "category": "Sports",
+    "questions": 7,
+    "date": "14/6/2026",
+    "image": "/media/pictures/quizsets/fifa.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DZjzMbsCFlM/?img_index=1"
   }
 ]
