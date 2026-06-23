@@ -229,5 +229,16 @@
     "poster": "/media/pictures/events/rewind.jpeg",
     "drivelink": "https://drive.google.com/file/d/1GHJopI6mABp9jppzNLLXcqDE9wxt4Yep/view?usp=drive_link",
     "eventStatus": "completed"    
+  },
+  {
+    "id": 22,
+    "title": "Sci-Tech Quiz",
+    "description": "Quizzers Anonymous Presents The Sci-Tech Quiz",
+    "date": "21/06/2026",
+    "time": "04:00 PM",
+    "venue": "Online",
+    "poster": "/media/pictures/events/scitech.jpeg",
+    "drivelink": "",
+    "eventStatus": "upcoming"
   }
 ]
