@@ -98,5 +98,15 @@
     "date": "21/12/2025",
     "image": "/media/pictures/articles/superman.jpeg",
     "instagramUrl": "https://www.instagram.com/p/DSg2I5pEuXP/"
+  },
+  {
+    "id": 11,
+    "title": "Evolution of Film colour",
+    "description": "Discover how cinema transformed from capturing reality to creating emotion",
+    "author": "Naren",
+    "category": "Technology",
+    "date": "30/6/2026",
+    "image": "/media/pictures/articles/film.jpeg",
+    "instagramUrl": "https://www.instagram.com/p/DaNK2kYiDa6/"
   }
 ]
