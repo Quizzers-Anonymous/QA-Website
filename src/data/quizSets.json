@@ -208,5 +208,15 @@
     "date": "14/6/2026",
     "image": "/media/pictures/quizsets/fifa.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DZjzMbsCFlM/?img_index=1"
+  },
+  {
+    "id": 21,
+    "title": "The Signal Hunt",
+    "description": "Quizzers Anonymous X IEEE ComSoc Presents The Signal Hunt",
+    "category": "Science",
+    "questions": 8,
+    "date": "5/7/2026",
+    "image": "/media/pictures/quizsets/SignalHunt.png",
+    "downloadUrl": "https://www.instagram.com/p/DaZz451iJbV/?img_index=1"
   }
 ]
