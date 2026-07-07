@@ -240,5 +240,17 @@
     "poster": "/media/pictures/events/scitech.jpeg",
     "drivelink": "https://drive.google.com/file/d/1WVqAJ3vHrxX_A7LpDLPHYBOX8TzRY6Cs/view?usp=sharing",
     "eventStatus": "completed"
+  },
+   {
+    "id": 23,
+    "title": "The Signal Hunt - Quizzers' Sundae",
+    "description": "Quizzers Anonymous X IEE ComSoc Presents The Signal Hunt Quiz",
+    "date": "05/07/2026",
+    "time": "04:00 PM",
+    "venue": "Online",
+    "poster": "/media/pictures/events/SignalHunt.png",
+    "drivelink": "",
+    "eventStatus": "completed"
   }
+  
 ]
