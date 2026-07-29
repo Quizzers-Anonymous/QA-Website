@@ -8,8 +8,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "daily"
     groups:
       all-dependencies:
         patterns:
