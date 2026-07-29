@@ -218,5 +218,15 @@
     "date": "5/7/2026",
     "image": "/media/pictures/quizsets/SignalHunt.png",
     "downloadUrl": "https://www.instagram.com/p/DaZz451iJbV/?img_index=1"
+  },
+  {
+    "id": 22,
+    "title": "Spiderman Brand New QS",
+    "description": "Presenting the Quizzers Sundae - The Ultimate Spider-man quiz",
+    "category": "Entertainment",
+    "questions": 8,
+    "date": "26/7/2026",
+    "image": "/media/pictures/quizsets/spiderman.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DbPlUGgEu3B/?img_index=1"
   }
 ]

@@ -183,10 +183,10 @@ const Home = () => {
                     <InstagramPostEmbed url="https://www.instagram.com/p/DM-oLOizDzC/" />
                   </div>
                   <div className="flex justify-center hover:scale-105 transition-transform duration-300">
-                    <InstagramPostEmbed url="https://www.instagram.com/p/DMAe-fcSvCb/" />
+                    <InstagramPostEmbed url="https://www.instagram.com/p/DafZIEDEoak/" />
                   </div>
                   <div className="flex justify-center hover:scale-105 transition-transform duration-300">
-                    <InstagramPostEmbed url="https://www.instagram.com/p/DMAdi9YynBn/" />
+                    <InstagramPostEmbed url="https://www.instagram.com/p/DafXiQjkrcL/" />
                   </div>
                 </Suspense>
               </div>
