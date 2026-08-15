@@ -115,24 +115,24 @@ const Contact = () => {
                   <div className="space-y-1">
                     <div>
                       <span className="text-dark-text-secondary">
-                        Jaison Jecinth Vincent (President):{" "}
+                        Manoranjn  (President):{" "}
                       </span>
                       <a
-                        href="tel:+919025601119"
+                        href="tel:+919788687286"
                         className="text-accent-blue hover:text-blue-400 transition-colors"
                       >
-                        +91 90256 01119
+                        +91 9788687286
                       </a>
                     </div>
                     <div>
                       <span className="text-dark-text-secondary">
-                        Visvam Srinivasan (Vice President):{" "}
+                        Arun Prasath (Vice President):{" "}
                       </span>
                       <a
-                        href="tel:+916385050355"
+                        href="tel:+917010252571"
                         className="text-accent-blue hover:text-blue-400 transition-colors"
                       >
-                        +91 63850 50355
+                        +91 7010252571
                       </a>
                     </div>
                   </div>

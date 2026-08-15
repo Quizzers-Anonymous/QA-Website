@@ -1,226 +1,35 @@
-{
-  "heads": [
-    {
-      "id": 1,
-      "name": "Jaison Jecinth Vincent",
-      "photoKey": "Heads/jaison.png",
-      "designation": "President",
-      "year": "3rd Year",
-      "department": "Computer Science Engineering"
-    },
-    {
-      "id": 2,
-      "name": "Visvam Srinivasan",
-      "photoKey": "Heads/visvam.png",
-      "designation": "Vice President",
-      "year": "3rd Year",
-      "department": "Computer Science Engineering"
-    },
-    {
-      "id": 3,
-      "name": "Mikul Ramesh",
-      "photoKey": "Heads/mikul.png",
-      "designation": "Co-Heads of Curation",
-      "year": "4th Year",
-      "department": "Mechanical Engineering"
-    },
-    {
-      "id": 4,
-      "name": "Akash P S",
-      "photoKey": "Heads/akash.png",
-      "designation": "Co-Heads of Curation",
-      "year": "4th Year",
-      "department": "Mechanical Engineering"
-    },
-    {
-      "id": 5,
-      "name": "Girish Sai D",
-      "photoKey": "Heads/girish.png",
-      "designation": "Co-Heads of Curation",
-      "year": "4th Year",
-      "department": "Information technology"
-    },
-    {
-      "id": 6,
-      "name": "Manoranjan U",
-      "photoKey": "Heads/mano.png",
-      "designation": "Head of Operations",
-      "year": "3rd Year",
-      "department": "Electronics & Communication Engineering"
-    },
-    {
-      "id": 7,
-      "name": "Sasi Kiran L",
-      "photoKey": "Heads/sasi.png",
-      "designation": "Co-Heads of Marketing",
-      "year": "3rd Year",
-      "department": "Computer Science Engineering"
-    },
-    {
-      "id": 8,
-      "name": "Shushmita K",
-      "photoKey": "Heads/sushmitha.png",
-      "designation": "Co-Heads of Marketing",
-      "year": "3rd Year",
-      "department": "Biomedical Engineering"
-    },
-    {
-      "id": 9,
-      "name": "Mohamed Jasim J",
-      "photoKey": "Heads/jasim.png",
-      "designation": "Head of Contents",
-      "year": "3rd Year",
-      "department": "Computer Science Engineering"
-    },
-    {
-      "id": 10,
-      "name": "Sudarshan V",
-      "photoKey": "Heads/sudharshan.png",
-      "designation": "Head of Design",
-      "year": "3rd Year",
-      "department": "Electronics & Communication Engineering"
-    },
-    {
-      "id": 11,
-      "name": "Aravindhan S",
-      "photoKey": "Heads/aravindhan.png",
-      "designation": "Tech",
-      "year": "3rd Year",
-      "department": "Computer Science Engineering"
-    }
-  ],
-  "associateHeads": [
-    {
-      "id": 12,
-      "name": "Manesh Ram",
-      "photoKey": "AHs/manesh.png",
-      "designation": "Operations",
-      "year": "3rd Year",
-      "department": "Computer Science Engineering"
-    },
-    {
-      "id": 13,
-      "name": "Ragotma Ragavendar Nandagopal",
-      "photoKey": "AHs/ragotma.png",
-      "designation": "Operations",
-      "year": "3rd Year",
-      "department": "Computer Science Engineering"
-    },
-    {
-      "id": 14,
-      "name": "Arunprasath M",
-      "photoKey": "AHs/arunprasath.png",
-      "designation": "Operations",
-      "year": "2nd Year",
-      "department": "Mechanical Engineering"
-    },
-    {
-      "id": 15,
-      "name": "Abhishek S",
-      "photoKey": "AHs/abhishek.png",
-      "designation": "Operations",
-      "year": "3rd Year",
-      "department": "Computer Science Engineering"
-    },
-    {
-      "id": 16,
-      "name": "Srivishnu Rajkrishna",
-      "photoKey": "AHs/shrivishnu.png",
-      "designation": "Marketing",
-      "year": "2nd Year",
-      "department": "Computer Science Engineering"
-    },
-    {
-      "id": 17,
-      "name": "Roshon R",
-      "photoKey": "AHs/roshon.png",
-      "designation": "Design",
-      "year": "3rd Year",
-      "department": "Biomedical Engineering"
-    }
-  ],
-  "seniorCoordinators": [
-    {
-      "id": 18,
-      "name": "Samyuktha Venkatasamy",
-      "photoKey": "SCs/samyuktha.png",
-      "designation": "Operations",
-      "year": "3rd Year",
-      "department": "Industrial Engineering"
-    },
-    {
-      "id": 19,
-      "name": "Jeffrey Samuel Raj P",
-      "photoKey": "SCs/Jeffrey.png",
-      "designation": "Marketing",
-      "year": "3rd Year",
-      "department": "Electronics & Communication Engineering"
-    },
-    {
-      "id": 20,
-      "name": "Parthasarathi N S",
-      "photoKey": "SCs/parthasarathy.png",
-      "designation": "Contents",
-      "year": "2nd Year",
-      "department": "Medical Physics"
-    },
-    {
-      "id": 21,
-      "name": "Suvi Sharon",
-      "photoKey": "SCs/suvi.png",
-      "designation": "Contents",
-      "year": "3rd Year",
-      "department": "Computer Science Engineering"
-    },
-    {
-      "id": 22,
-      "name": "Nagarajan S",
-      "photoKey": "SCs/nagarajan.png",
-      "designation": "Design",
-      "year": "3rd Year",
-      "department": "Mechanical Engineering"
-    },
-    {
-      "id": 23,
-      "name": "A Mohammed Saalih",
-      "photoKey": "SCs/saalih.png",
-      "designation": "Design",
-      "year": "3rd Year",
-      "department": "Computer Science Engineering"
-    },
-    {
-      "id": 24,
-      "name": "Kaviya",
-      "photoKey": "SCs/kaviya.png",
-      "designation": "Design",
-      "year": "2nd Year",
-      "department": "Computer Science Engineering"
-    }
-  ],
-  "juniorCoordinators": [
-    {
-      "id": 25,
-      "name": "Sachin C K S",
-      "photoKey": "JCs/sachin.png",
-      "designation": "Contents",
-      "year": "2nd Year",
-      "department": "Mechanical Engineering"
-    },
-    {
-      "id": 26,
-      "name": "Ramkumar R",
-      "photoKey": "JCs/ramkumar.png",
-      "designation": "Design",
-      "year": "2nd Year",
-      "department": "Mechanical Engineering"
-    },
-    {
-      "id": 27,
-      "name": "Sujitha",
-      "photoKey": "JCs/sujitha.png",
-      "designation": "Design",
-      "year": "2nd Year",
-      "department": "Electrical & Communication Engineering"
-    }
-  ]
-}
+[
+  { "name": "MANORANJAN U", "team": "", "role": "PRESIDENT", "image": "/media/pictures/team/manoranjan.jpg" },
+  { "name": "ARUNPRASATH M", "team": "", "role": "VICE PRESIDENT", "image": "/media/pictures/team/arunprasath.png" },
+  { "name": "VIGNESH PANDIAN R", "team": "OPERATIONS", "role": "HEAD", "image": "/media/pictures/team/vignesh.jpeg" },
+  { "name": "VIDHYA LAKSHMI", "team": "EVENTS", "role": "HEAD", "image": "/media/pictures/team/vidhya.jpeg" },
+  { "name": "VIBISH V", "team": "EVENTS", "role": "Associate Head", "image": "/media/pictures/team/vibish.jpeg" },
+  { "name": "SUVI SHARON", "team": "CONTENTS", "role": "Associate Head", "image": "/media/pictures/team/suvi.jpeg" },
+  { "name": "GURUPARAN", "team": "CONTENTS", "role": "HEAD", "image": "/media/pictures/team/guruparan.jpeg" },
+  { "name": "ANANTH V M", "team": "CONTENTS", "role": "Associate Head", "image": "/media/pictures/team/ananth.jpg" },
+  { "name": "SRIVISHNU", "team": "MARKETING", "role": "HEAD", "image": "/media/pictures/team/srivishnu.jpeg" },
+  { "name": "NITHISH SURYA", "team": "TECH", "role": "HEAD", "image": "/media/pictures/team/nithish.jpeg" },
+  { "name": "VARSHINI GANESAN", "team": "OPERATIONS", "role": "Senior Coordinator", "image": "/media/pictures/team/varshini.jpeg" },
+  { "name": "SRIVARSHAN M", "team": "OPERATIONS", "role": "Senior Coordinator", "image": "/media/pictures/team/srivarshan.jpeg" },
+  { "name": "SHIVADARSHAN B", "team": "OPERATIONS", "role": "Senior Coordinator", "image": "/media/pictures/team/shivadarshan.jpeg" },
+  { "name": "APISHAA J", "team": "OPERATIONS", "role": "Senior Coordinator", "image": "/media/pictures/team/apishaa.jpeg" },
+  { "name": "BHARATHRAJ SHANMUGAM", "team": "OPERATIONS", "role": "Junior Coordinator", "image": "/media/pictures/team/bharathraj.jpeg" },
+  { "name": "SALMAN ANWAR", "team": "OPERATIONS", "role": "Junior Coordinator", "image": "/media/pictures/team/salman.jpeg" },
+  { "name": "VISHAL A", "team": "EVENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/vishal.jpeg" },
+  { "name": "AMRIT GOWRI SHANKAR", "team": "EVENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/amrit.png" },
+  { "name": "DINESH KARTHIK", "team": "EVENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/dinesh.jpeg" },
+  { "name": "MATHIMALA S", "team": "EVENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/mathimala.jpeg" },
+  { "name": "PRISHA BALAKRISHNAN", "team": "EVENTS", "role": "Junior Coordinator", "image": "/media/pictures/team/prisha.jpeg" },
+  { "name": "KANIGA M", "team": "TECH", "role": "Senior Coordinator", "image": "/media/pictures/team/kaniga.jpeg" },
+  { "name": "NAREN NARAYANAN", "team": "CONTENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/naren.jpeg" },
+  { "name": "LEKSHMI K", "team": "CONTENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/lekshmi.jpeg" },
+  { "name": "VIDHYA SHANKAR", "team": "CONTENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/vidhyaShankar.png" },
+  { "name": "DIVYA NARGUNAM", "team": "CONTENTS", "role": "Junior Coordinator", "image": "/media/pictures/team/divya.jpeg" },
+  { "name": "VISHAK SENTHILKUMAR", "team": "MARKETING", "role": "Senior Coordinator", "image": "/media/pictures/team/vishak.jpeg" },
+  { "name": "DANISH S", "team": "MARKETING", "role": "Senior Coordinator", "image": "/media/pictures/team/danish.jpeg" },
+  { "name": "ELAVARASI", "team": "MARKETING", "role": "Junior Coordinator", "image": "/media/pictures/team/elavarasi.jpeg" },
+  { "name": "VIKASHINI P", "team": "DESIGN", "role": "Senior Coordinator", "image": "/media/pictures/team/vikashini.jpeg" },
+  { "name": "DHARSINI B", "team": "DESIGN", "role": "Junior Coordinator", "image": "/media/pictures/team/dharsini.jpeg" },
+  { "name": "PREMNATH", "team": "EVENTS", "role": "Junior Coordinator", "image": "/media/pictures/team/premnath.png" },
+  { "name": "KARTHIKA", "team": "OPERATIONS", "role": "Junior Coordinator", "image": "/media/pictures/team/karthika.jpeg" }
+]
