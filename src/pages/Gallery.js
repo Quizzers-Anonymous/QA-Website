@@ -18,6 +18,12 @@ const Gallery = () => {
       name: "2025",
       count: images.filter((img) => img.year === 2025).length,
     },
+    {
+      id:"2026",
+      name: "2026",
+      count: images.filter((img) => img.year === 2026).length,
+
+    }
   ];
 
   // Apply year filter
