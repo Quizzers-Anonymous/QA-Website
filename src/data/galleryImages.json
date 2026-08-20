@@ -222,5 +222,122 @@
     "caption": "Sync'25 - Three Dragon Quiz (CSE Dept.)",
     "category": "events",
     "year": 2025
+  },
+  {
+    "id": 33,
+    "src": "/media/pictures/gallery/itrix.jpg",
+    "caption": "ITRIX - Rewind 2025",
+    "category": "events",
+    "year": 2025
+  },
+  {
+    "id": 34,
+    "src": "/media/pictures/gallery/qfi1.jpg",
+    "caption": "QFI Quiz",
+    "category": "events",
+    "year": 2025
+  },
+  {
+    "id": 35,
+    "src": "/media/pictures/gallery/qfi2.jpg",
+    "caption": "QFI Quiz",
+    "category": "events",
+    "year": 2025
+  },
+  {
+    "id": 36,
+    "src": "/media/pictures/gallery/CSRC1.JPG",
+    "caption": "CSRC Science Quiz",
+    "category": "events",
+    "year": 2026
+  },
+  {
+    "id": 37,
+    "src": "/media/pictures/gallery/CSRC2.JPG",
+    "caption": "CSRC Science Quiz",
+    "category": "events",
+    "year": 2026
+  },
+  {
+    "id": 38,
+    "src": "/media/pictures/gallery/CSRC3.JPG",
+    "caption": "CSRC Science Quiz",
+    "category": "events",
+    "year": 2026
+  },
+  
+  {
+    "id": 39,
+    "src": "/media/pictures/gallery/lit1.jpg",
+    "caption": "Litablaze Fandom Quiz",
+    "category": "events",
+    "year": 2026
+  },
+  {
+    "id": 40,
+    "src": "/media/pictures/gallery/lit2.jpg",
+    "caption": "Litablaze Fandom Quiz",
+    "category": "events",
+    "year": 2026
+  },
+  {
+    "id": 41,
+    "src": "/media/pictures/gallery/MCU 1.jpeg",
+    "caption": "MCU vs DC Quiz",
+    "category": "events",
+    "year": 2026
+  },
+  
+  {
+    "id": 42,
+    "src": "/media/pictures/gallery/MCU 2.jpeg",
+    "caption": "MCU vs DC Quiz",
+    "category": "events",
+    "year": 2026
+  },
+  {
+    "id": 43,
+    "src": "/media/pictures/gallery/Tea Kadai.jpeg",
+    "caption": "Tea Kadai Quiz",
+    "category": "events",
+    "year": 2026
+  },
+  {
+    "id": 44,
+    "src": "/media/pictures/gallery/Tech General.jpg",
+    "caption": "General Quiz - Techoffes'26",
+    "category": "events",
+    "year": 2026
+  },
+  
+  {
+    "id": 45,
+    "src": "/media/pictures/gallery/Tech Meme 1.jpg",
+    "caption": "Meme Quiz - Techoffes'26",
+    "category": "events",
+    "year": 2026
+  },
+  {
+    "id": 46,
+    "src": "/media/pictures/gallery/Tech Meme 2.jpg",
+    "caption": "Meme Quiz - Techoffes'26",
+    "category": "events",
+    "year": 2026
+  },
+  {
+    "id": 47,
+    "src": "/media/pictures/gallery/Tech Meme 3.jpg",
+    "caption": "Meme Quiz - Techoffes'26",
+    "category": "events",
+    "year": 2026
+  },
+  
+  {
+    "id": 48,
+    "src": "/media/pictures/gallery/zifo 2026.jpg",
+    "caption": "Zifo Quiz 2026",
+    "category": "events",
+    "year": 2026
   }
+    
 ]
