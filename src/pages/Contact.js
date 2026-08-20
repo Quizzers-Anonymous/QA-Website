@@ -115,7 +115,7 @@ const Contact = () => {
                   <div className="space-y-1">
                     <div>
                       <span className="text-dark-text-secondary">
-                        Manoranjn  (President):{" "}
+                        Manoranjan  (President):{" "}
                       </span>
                       <a
                         href="tel:+919788687286"
