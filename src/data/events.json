@@ -251,5 +251,17 @@
     "poster": "/media/pictures/events/kollywood.jpeg",
     "drivelink": "",
     "eventStatus": "completed"
+  },
+  {
+    "id": 24,
+    "title": "Scan & Score Quiz Event",
+    "description": "Quizzers Anonymous Presents The Scan & Score Quiz Event",
+    "date": "31/08/2026",
+    "time": "All Day",
+    "venue": "Anna University",
+    "poster": "/media/pictures/events/scan.jpeg",
+    "drivelink": "",
+    "eventStatus": "completed"
   }
 ]
+  
