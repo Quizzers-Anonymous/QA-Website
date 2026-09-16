@@ -228,5 +228,15 @@
     "date": "26/7/2026",
     "image": "/media/pictures/quizsets/spiderman.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DbPlUGgEu3B/?img_index=1"
+  },
+  {
+    "id": 23,
+    "title": "The Mystery Quiz",
+    "description": "Quizzers Sundae - The Mystery Quiz",
+    "category": "General Knowledge",
+    "questions": 7,
+    "date": "13/9/2026",
+    "image": "/media/pictures/quizsets/mystery.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DdOSPS4ktmi/?img_index=1"
   }
 ]
