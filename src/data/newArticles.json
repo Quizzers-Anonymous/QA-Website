@@ -108,5 +108,16 @@
     "date": "30/6/2026",
     "image": "/media/pictures/articles/film.jpeg",
     "instagramUrl": "https://www.instagram.com/p/DaNK2kYiDa6/"
+  },
+  {
+    "id": 12  ,
+    "title": "What if an Indian made Hitler apologise ?",
+    "description": "understand the sacrifices of a true Martyr, who has made us all stand proud today",
+    "author": "Naren",
+    "category": "History & Geography",
+    "date": "11/9/2026",
+    "image": "/media/pictures/articles/pillai.jpeg",
+    "instagramUrl": "https://www.instagram.com/p/DdJGZX4EjVK/"
   }
+
 ]
