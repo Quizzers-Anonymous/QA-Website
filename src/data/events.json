@@ -262,6 +262,17 @@
     "poster": "/media/pictures/events/scan.jpeg",
     "drivelink": "",
     "eventStatus": "completed"
+  },
+  {
+    "id": 25,
+    "title": "VINVELI NAYAGAA - THE COSMIC QUEST BEGINS! ",
+    "description": "Quizzers Anonymous X Astro Club Presents The Space Quiz",
+    "date": "18/09/2026",
+    "time": "04:30 PM",
+    "venue": "Red Building Room 75",
+    "poster": "/media/pictures/events/astro.jpeg",
+    "drivelink": "",
+    "eventStatus": "completed"
   }
 ]
   

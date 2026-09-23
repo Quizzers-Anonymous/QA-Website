@@ -5,9 +5,9 @@ import teamMembers from "../data/team.json";
 const Team = () => {
   const heads = teamMembers.filter(
     (member) =>
-      member.role === "HEAD" ||
-      member.role === "PRESIDENT" ||
-      member.role === "VICE PRESIDENT",
+      member.role === "Heads" ||
+      member.role === "President" ||
+      member.role === "Vice President",
   );
 
   const associateHeads = teamMembers.filter(

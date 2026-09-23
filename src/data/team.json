@@ -1,35 +1,200 @@
 [
-  { "name": "MANORANJAN U", "team": "", "role": "PRESIDENT", "image": "/media/pictures/team/manoranjan.jpg" },
-  { "name": "ARUNPRASATH M", "team": "", "role": "VICE PRESIDENT", "image": "/media/pictures/team/arunprasath.png" },
-  { "name": "VIGNESH PANDIAN R", "team": "OPERATIONS", "role": "HEAD", "image": "/media/pictures/team/vignesh.jpeg" },
-  { "name": "VIDHYA LAKSHMI", "team": "EVENTS", "role": "HEAD", "image": "/media/pictures/team/vidhya.jpeg" },
-  { "name": "VIBISH V", "team": "EVENTS", "role": "Associate Head", "image": "/media/pictures/team/vibish.jpeg" },
-  { "name": "SUVI SHARON", "team": "CONTENTS", "role": "Associate Head", "image": "/media/pictures/team/suvi.jpeg" },
-  { "name": "GURUPARAN", "team": "CONTENTS", "role": "HEAD", "image": "/media/pictures/team/guruparan.jpeg" },
-  { "name": "ANANTH V M", "team": "CONTENTS", "role": "Associate Head", "image": "/media/pictures/team/ananth.jpg" },
-  { "name": "SRIVISHNU", "team": "MARKETING", "role": "HEAD", "image": "/media/pictures/team/srivishnu.jpeg" },
-  { "name": "NITHISH SURYA", "team": "TECH", "role": "HEAD", "image": "/media/pictures/team/nithish.jpeg" },
-  { "name": "VARSHINI GANESAN", "team": "OPERATIONS", "role": "Senior Coordinator", "image": "/media/pictures/team/varshini.jpeg" },
-  { "name": "SRIVARSHAN M", "team": "OPERATIONS", "role": "Senior Coordinator", "image": "/media/pictures/team/srivarshan.jpeg" },
-  { "name": "SHIVADARSHAN B", "team": "OPERATIONS", "role": "Senior Coordinator", "image": "/media/pictures/team/shivadarshan.jpeg" },
-  { "name": "APISHAA J", "team": "OPERATIONS", "role": "Senior Coordinator", "image": "/media/pictures/team/apishaa.jpeg" },
-  { "name": "BHARATHRAJ SHANMUGAM", "team": "OPERATIONS", "role": "Junior Coordinator", "image": "/media/pictures/team/bharathraj.jpeg" },
-  { "name": "SALMAN ANWAR", "team": "OPERATIONS", "role": "Junior Coordinator", "image": "/media/pictures/team/salman.jpeg" },
-  { "name": "VISHAL A", "team": "EVENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/vishal.jpeg" },
-  { "name": "AMRIT GOWRI SHANKAR", "team": "EVENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/amrit.png" },
-  { "name": "DINESH KARTHIK", "team": "EVENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/dinesh.jpeg" },
-  { "name": "MATHIMALA S", "team": "EVENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/mathimala.jpeg" },
-  { "name": "PRISHA BALAKRISHNAN", "team": "EVENTS", "role": "Junior Coordinator", "image": "/media/pictures/team/prisha.jpeg" },
-  { "name": "KANIGA M", "team": "TECH", "role": "Senior Coordinator", "image": "/media/pictures/team/kaniga.jpeg" },
-  { "name": "NAREN NARAYANAN", "team": "CONTENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/naren.jpeg" },
-  { "name": "LEKSHMI K", "team": "CONTENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/lekshmi.jpeg" },
-  { "name": "VIDHYA SHANKAR", "team": "CONTENTS", "role": "Senior Coordinator", "image": "/media/pictures/team/vidhyaShankar.png" },
-  { "name": "DIVYA NARGUNAM", "team": "CONTENTS", "role": "Junior Coordinator", "image": "/media/pictures/team/divya.jpeg" },
-  { "name": "VISHAK SENTHILKUMAR", "team": "MARKETING", "role": "Senior Coordinator", "image": "/media/pictures/team/vishak.jpeg" },
-  { "name": "DANISH S", "team": "MARKETING", "role": "Senior Coordinator", "image": "/media/pictures/team/danish.jpeg" },
-  { "name": "ELAVARASI", "team": "MARKETING", "role": "Junior Coordinator", "image": "/media/pictures/team/elavarasi.jpeg" },
-  { "name": "VIKASHINI P", "team": "DESIGN", "role": "Senior Coordinator", "image": "/media/pictures/team/vikashini.jpeg" },
-  { "name": "DHARSINI B", "team": "DESIGN", "role": "Junior Coordinator", "image": "/media/pictures/team/dharsini.jpeg" },
-  { "name": "PREMNATH", "team": "EVENTS", "role": "Junior Coordinator", "image": "/media/pictures/team/premnath.png" },
-  { "name": "KARTHIKA", "team": "OPERATIONS", "role": "Junior Coordinator", "image": "/media/pictures/team/karthika.jpeg" }
+  {
+    "name": "Manoranjan U",
+    "team": "",
+    "role": "President",
+    "image": "/media/pictures/team/manoranjan.jpg"
+  },
+  {
+    "name": "Arunprasath M",
+    "team": "",
+    "role": "Vice President",
+    "image": "/media/pictures/team/arunprasath.png"
+  },
+  {
+    "name": "Vignesh Pandian R",
+    "team": "Operations",
+    "role": "Heads",
+    "image": "/media/pictures/team/vignesh.jpeg"
+  },
+  {
+    "name": "Vidhya Lakshmi",
+    "team": "Events",
+    "role": "Heads",
+    "image": "/media/pictures/team/vidhya.jpeg"
+  },
+  {
+    "name": "Vibish V",
+    "team": "Events",
+    "role": "Associate Head",
+    "image": "/media/pictures/team/vibish.jpeg"
+  },
+  {
+    "name": "Suvi Sharon",
+    "team": "Contents",
+    "role": "Associate Head",
+    "image": "/media/pictures/team/suvi.jpeg"
+  },
+  {
+    "name": "Guruparan",
+    "team": "Contents",
+    "role": "Heads",
+    "image": "/media/pictures/team/guruparan.jpeg"
+  },
+  {
+    "name": "Ananth V M",
+    "team": "Contents",
+    "role": "Associate Head",
+    "image": "/media/pictures/team/ananth.jpg"
+  },
+  {
+    "name": "Srivishnu",
+    "team": "Marketing",
+    "role": "Heads",
+    "image": "/media/pictures/team/srivishnu.jpeg"
+  },
+  {
+    "name": "Nithish Surya",
+    "team": "Tech",
+    "role": "Heads",
+    "image": "/media/pictures/team/nithish.jpeg"
+  },
+  {
+    "name": "Varshini Ganesan",
+    "team": "Operations",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/varshini.jpeg"
+  },
+  {
+    "name": "Srivarshan M",
+    "team": "Operations",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/srivarshan.jpeg"
+  },
+  {
+    "name": "Shivadarshan B",
+    "team": "Operations",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/shivadarshan.jpeg"
+  },
+  {
+    "name": "Apishaa J",
+    "team": "Operations",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/apishaa.jpeg"
+  },
+  {
+    "name": "Bharathraj Shanmugam",
+    "team": "Operations",
+    "role": "Junior Coordinator",
+    "image": "/media/pictures/team/bharathraj.jpeg"
+  },
+  {
+    "name": "Salman Anwar",
+    "team": "Operations",
+    "role": "Junior Coordinator",
+    "image": "/media/pictures/team/salman.jpeg"
+  },
+  {
+    "name": "Vishal A",
+    "team": "Events",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/vishal.jpeg"
+  },
+  {
+    "name": "Amrit Gowri Shankar",
+    "team": "Events",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/amrit.png"
+  },
+  {
+    "name": "Dinesh Karthik",
+    "team": "Events",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/dinesh.jpeg"
+  },
+  {
+    "name": "Mathimala S",
+    "team": "Events",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/mathimala.jpeg"
+  },
+  {
+    "name": "Prisha Balakrishnan",
+    "team": "Events",
+    "role": "Junior Coordinator",
+    "image": "/media/pictures/team/prisha.jpeg"
+  },
+  {
+    "name": "Kaniga M",
+    "team": "Tech",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/kaniga.jpeg"
+  },
+  {
+    "name": "Naren Narayanan",
+    "team": "Contents",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/naren.jpeg"
+  },
+  {
+    "name": "Lekshmi K",
+    "team": "Contents",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/lekshmi.jpeg"
+  },
+  {
+    "name": "Vidhya Shankar",
+    "team": "Contents",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/vidhyaShankar.png"
+  },
+  {
+    "name": "Divya Nargunam",
+    "team": "Contents",
+    "role": "Junior Coordinator",
+    "image": "/media/pictures/team/divya.jpeg"
+  },
+  {
+    "name": "Vishak Senthilkumar",
+    "team": "Marketing",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/vishak.jpeg"
+  },
+  {
+    "name": "Danish S",
+    "team": "Marketing",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/danish.jpeg"
+  },
+  {
+    "name": "Elavarasi",
+    "team": "Marketing",
+    "role": "Junior Coordinator",
+    "image": "/media/pictures/team/elavarasi.jpeg"
+  },
+  {
+    "name": "Vikashini P",
+    "team": "Design",
+    "role": "Senior Coordinator",
+    "image": "/media/pictures/team/vikashini.jpeg"
+  },
+  {
+    "name": "Dharsini B",
+    "team": "Design",
+    "role": "Junior Coordinator",
+    "image": "/media/pictures/team/dharsini.jpeg"
+  },
+  {
+    "name": "Premnath",
+    "team": "Events",
+    "role": "Junior Coordinator",
+    "image": "/media/pictures/team/premnath.png"
+  },
+  {
+    "name": "Karthika",
+    "team": "Operations",
+    "role": "Junior Coordinator",
+    "image": "/media/pictures/team/karthika.jpeg"
+  }
 ]
