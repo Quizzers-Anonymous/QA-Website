@@ -70,41 +70,6 @@ For detailed instructions on how to add new content (events, articles, gallery i
 
    > **Tip:** The `/api` routes (team roster + photo proxy) only exist when served through Vercel (`vercel dev` locally or the deployed site). When using `npm start` you can point the React app to a remote API by setting `REACT_APP_TEAM_API_BASE`.
 
-## Protected Team Photos
-
-Team member headshots now live in a private Vercel Blob bucket. They are never referenced directly inside the React bundle—instead we proxy them through signed `/api` endpoints to reduce scraping while keeping the gallery public.
-
-### Required Environment Variables
-
-Configure the following variables (via `.env.local` or `vercel env`):
-
-```
-TEAM_IMAGE_SIGNING_SECRET=generate-a-long-random-string
-TEAM_IMAGE_BLOB_BASE_URL=https://<your-private-account>.blob.vercel-storage.com
-# Optional helpers
-TEAM_IMAGE_BLOB_READ_TOKEN=vercel_blob_rw_...
-TEAM_IMAGE_REFERER=qa-website.vercel.app
-TEAM_IMAGE_URL_TTL_SECONDS=300
-REACT_APP_TEAM_API_BASE=https://qa-website.vercel.app   # only needed if you run npm start locally
-```
-
-- `TEAM_IMAGE_SIGNING_SECRET` powers the HMAC signature attached to every photo request.
-- `TEAM_IMAGE_BLOB_BASE_URL` points at the bucket/web path that stores the actual files.
-- `TEAM_IMAGE_BLOB_READ_TOKEN` lets the proxy access private blobs; omit it if the bucket is world-readable.
-- `TEAM_IMAGE_REFERER` (optional) enforces a referer check to block obvious hotlinking.
-- `TEAM_IMAGE_URL_TTL_SECONDS` controls how long the signed URLs stay valid (default 5 minutes).
-- `REACT_APP_TEAM_API_BASE` is only required when the React build must talk to an already deployed API (e.g., running `npm start` without `vercel dev`).
-
-### Runtime Flow
-
-1. `/api/team` reads `src/data/team.json`, strips the raw blob keys, and returns short-lived signed URLs for each member photo.
-2. The browser requests `/api/team-photo?...signature=...` for every headshot. The proxy validates the signature, checks optional referer headers, then streams the blob bytes.
-3. CDN caching (`Cache-Control` + `s-maxage`) keeps traffic within the current Vercel plan limits (10k simple ops / 2k advanced ops / 10 GB transfer).
-
-#### Rate Limiting
-
-There is **no** server-side rate limiting applied yet. If scraping becomes an issue, wrap the two API handlers with middleware such as Vercel Edge Config + Upstash Redis or a simple in-memory limiter via `@upstash/ratelimit` / `lru-cache`, then document the chosen limits here.
-
 ## Website Structure
 
 ### Main Pages
