@@ -60,15 +60,7 @@ For detailed instructions on how to add new content (events, articles, gallery i
    npm start
    ```
 
-   To exercise the protected team photo APIs locally, run Vercel's unified dev server instead:
-
-   ```bash
-   npx vercel dev
-   ```
-
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-   > **Tip:** The `/api` routes (team roster + photo proxy) only exist when served through Vercel (`vercel dev` locally or the deployed site). When using `npm start` you can point the React app to a remote API by setting `REACT_APP_TEAM_API_BASE`.
 
 ## Website Structure
 
@@ -109,11 +101,21 @@ src/
 ├── components/         # Reusable React components
 ├── data/               # JSON data files
 │   ├── events.json     # Event data
+│   ├── team.json       # Team member data
 │   ├── quizSets.json   # Quiz sets data
 │   └── galleryImages.json # Gallery images data
 ├── pages/              # Main page components
 ├── utils/              # Utility functions
 └── App.js              # Main application component
+
+public/
+└── media/
+    └── pictures/
+        ├── articles/   # Article images
+        ├── events/     # Event posters and videos
+        ├── gallery/    # Gallery images
+        ├── quizsets/   # Quiz set images
+        └── team/       # Team member headshots
 ```
 
 Built with ♥️ by Quizzers Anonymous Team
